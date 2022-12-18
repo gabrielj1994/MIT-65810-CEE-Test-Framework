@@ -86,30 +86,33 @@ int main(int argc, char **argv)
 	// Busy Loop
 	time_t start, end;
     double runTime;
-    start = time(NULL);
-    int num = 1,primes = 0;
+    int limit = 100000;
+	while (true) {
+		start = time(NULL);
+		int num = 1,primes = 0;
 
-    int limit = 10000;
 
-// #pragma omp parallel for schedule(dynamic) reduction(+ : primes)
-    for (num = 1; num <= limit; num++) { 
-        int i = 2; 
-        while(i <= num) { 
-            if(num % i == 0)
-                break;
-            i++; 
-        }
-        if(i == num)
-            primes++;
+	// #pragma omp parallel for schedule(dynamic) reduction(+ : primes)
+		for (num = 1; num <= limit; num++) { 
+			int i = 2; 
+			while(i <= num) { 
+				if(num % i == 0)
+					break;
+				i++; 
+			}
+			if(i == num)
+				primes++;
 
-		if(primes % 2500 == 0)
-			sleep(1);
-//      printf("%d prime numbers calculated\n",primes);
-    }
+			if(primes % 25000 == 0)
+				sleep(1);
+	//      printf("%d prime numbers calculated\n",primes);
+		}
 
-    end = time(NULL);
-    runTime = end - start;
-    printf("This machine calculated all %d prime numbers under %d in %g seconds\n",primes,limit,runTime);
+		end = time(NULL);
+		runTime = end - start;
+		printf("This machine calculated all %d prime numbers under %d in %g seconds\n",primes,limit,runTime);
+	}
+    
 
     return 0;
 }
