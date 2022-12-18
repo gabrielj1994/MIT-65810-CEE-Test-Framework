@@ -11,6 +11,7 @@
  *
  * This code has been modified as a skeleton for lab3 in 6.5810 at MIT.
  */
+#define _GNU_SOURCE
 // #define __USE_GNU 1
 // #define _GNU_SOURCE 1
 
@@ -66,7 +67,6 @@
 // #endif
 
 // #define MAX_LOG_LEN 4096
-#define _GNU_SOURCE
 #include <sched.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -84,9 +84,9 @@ int main(int argc, char **argv)
 	sched_setaffinity(0, sizeof(cpu_set_t), &set);  // 0 is the calling process
 
 	// Busy Loop
-	double start, end;
+	time_t start, end;
     double runTime;
-    start = omp_get_wtime();
+    start = time(NULL);
     int num = 1,primes = 0;
 
     int limit = 10000;
@@ -107,7 +107,7 @@ int main(int argc, char **argv)
 //      printf("%d prime numbers calculated\n",primes);
     }
 
-    end = omp_get_wtime();
+    end = time(NULL);
     runTime = end - start;
     printf("This machine calculated all %d prime numbers under %d in %g seconds\n",primes,limit,runTime);
 
