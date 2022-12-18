@@ -11,61 +11,69 @@
  *
  * This code has been modified as a skeleton for lab3 in 6.5810 at MIT.
  */
-#define __USE_GNU 1
-#define _GNU_SOURCE 1
+// #define __USE_GNU 1
+// #define _GNU_SOURCE 1
 
-#include <linux/types.h>
-#include <linux/filter.h>
-#include <linux/seccomp.h>
-#include <linux/unistd.h>
-#include <signal.h>
+// #include <linux/types.h>
+// #include <linux/filter.h>
+// #include <linux/seccomp.h>
+// #include <linux/unistd.h>
+// #include <signal.h>
+// #include <stdio.h>
+// #include <stddef.h>
+// #include <fcntl.h>
+// #include <string.h>
+// #include <stdarg.h>
+// #include <stdlib.h>
+// #include <sys/prctl.h>
+// #include <unistd.h>
+// #include <errno.h>
+
+// #include <inttypes.h>
+// #include <ftw.h>
+// #include <string.h>
+// #include <time.h>
+
+// #define syscall_arg(_n) (offsetof(struct seccomp_data, args[_n]))
+// #define syscall_nr (offsetof(struct seccomp_data, nr))
+
+// #if defined(__i386__)
+// #define REG_RESULT	REG_EAX
+// #define REG_SYSCALL	REG_EAX
+// #define REG_ARG0	REG_EBX
+// #define REG_ARG1	REG_ECX
+// #define REG_ARG2	REG_EDX
+// #define REG_ARG3	REG_ESI
+// #define REG_ARG4	REG_EDI
+// #define REG_ARG5	REG_EBP
+// #elif defined(__x86_64__)
+// #define REG_RESULT	REG_RAX
+// #define REG_SYSCALL	REG_RAX
+// #define REG_ARG0	REG_RDI
+// #define REG_ARG1	REG_RSI
+// #define REG_ARG2	REG_RDX
+// #define REG_ARG3	REG_R10
+// #define REG_ARG4	REG_R8
+// #define REG_ARG5	REG_R9
+// #endif
+
+// #ifndef PR_SET_NO_NEW_PRIVS
+// #define PR_SET_NO_NEW_PRIVS 38
+// #endif
+
+// #ifndef SYS_SECCOMP
+// #define SYS_SECCOMP 1
+// #endif
+
+// #define MAX_LOG_LEN 4096
+#define _GNU_SOURCE
+#include <sched.h>
 #include <stdio.h>
-#include <stddef.h>
-#include <fcntl.h>
-#include <string.h>
-#include <stdarg.h>
 #include <stdlib.h>
-#include <sys/prctl.h>
 #include <unistd.h>
-#include <errno.h>
-
-#include <inttypes.h>
-#include <ftw.h>
-#include <string.h>
+#include <sys/wait.h>
 #include <time.h>
-
-#define syscall_arg(_n) (offsetof(struct seccomp_data, args[_n]))
-#define syscall_nr (offsetof(struct seccomp_data, nr))
-
-#if defined(__i386__)
-#define REG_RESULT	REG_EAX
-#define REG_SYSCALL	REG_EAX
-#define REG_ARG0	REG_EBX
-#define REG_ARG1	REG_ECX
-#define REG_ARG2	REG_EDX
-#define REG_ARG3	REG_ESI
-#define REG_ARG4	REG_EDI
-#define REG_ARG5	REG_EBP
-#elif defined(__x86_64__)
-#define REG_RESULT	REG_RAX
-#define REG_SYSCALL	REG_RAX
-#define REG_ARG0	REG_RDI
-#define REG_ARG1	REG_RSI
-#define REG_ARG2	REG_RDX
-#define REG_ARG3	REG_R10
-#define REG_ARG4	REG_R8
-#define REG_ARG5	REG_R9
-#endif
-
-#ifndef PR_SET_NO_NEW_PRIVS
-#define PR_SET_NO_NEW_PRIVS 38
-#endif
-
-#ifndef SYS_SECCOMP
-#define SYS_SECCOMP 1
-#endif
-
-#define MAX_LOG_LEN 4096
+#include <omp.h>
 
 
 int main(int argc, char **argv)
