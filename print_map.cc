@@ -168,8 +168,10 @@ int main(int argc, char **argv)
     // Loop to read required byte
     // of file
 	d = fgetc(fptr2);
+	i = 0;
+	j = 0;
     for (i = 0, j = 0; i <= to
-                       && c != EOF;
+                       && d != EOF;
          i++) {
   
         // Skip the bytes not required
