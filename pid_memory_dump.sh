@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#grep r[-w]-p ./dump_busy_loop/11312/maps \
+#| sed -n 's/^\([0-9a-f]*\)-\([0-9a-f]*\) .*$/\1 \2/p' \
+#
 # grep rw-p /proc/$1/maps \
 grep busy_loop /proc/$1/maps \
 | sed -n 's/^\([0-9a-f]*\)-\([0-9a-f]*\) .*$/\1 \2/p' \
