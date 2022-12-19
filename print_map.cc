@@ -91,6 +91,13 @@ int main(int argc, char **argv)
     int i = 0, j, from, to;
 	from = 0;
 	to = 1000;
+
+	printf("Arg count: %d", argc);
+
+	if (argc < 2) 
+		exit(0);
+
+	printf("Comparing memory content from:\n%s\n%s", argv[1], argv[2]);
   
     // If the file exists and has
     // read permission

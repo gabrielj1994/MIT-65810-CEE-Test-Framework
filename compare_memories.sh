@@ -2,8 +2,9 @@
 
 pid_dir1=$1
 pid_dir2=$2
-filepaths1=("dummy1")
-filepaths2=("dummy2")
+output_dir=$3
+filepaths1=()
+filepaths2=()
 
 # for str1 in ${filepaths1[@]}; do
 #   echo $str1
@@ -31,8 +32,8 @@ filepaths2[${#filepaths2[@]}]=${file_path}
 done <<<$(ls -lrtad ${pid_dir2}/* | grep output\d*)
 
 for i in ${!filepaths1[@]}; do
-  echo "element $i is ${filepaths1[$i]} ${filepaths1[$i]}"
-  sudo ./print_map ${filepaths1[$i]} ${filepaths1[$i]}
+  echo "element $i is ${filepaths1[$i]} ${filepaths2[$i]}"
+  sudo ./print_map ${filepaths1[$i]} ${filepaths2[$i]} > "$3/$i_comparisons.log"
 done
 
 
