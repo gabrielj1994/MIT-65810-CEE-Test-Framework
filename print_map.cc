@@ -132,10 +132,11 @@ byte 2: 53
          i++) {
 		
 		str1[i] = c;
+		printf("str1 value loc=%d value=%c", i, c);
 
-		if (i == 96 || i == 100 || i == 104) {
-			printf("str1 value loc=%d value=%c", i, c);
-		}
+		// if (i == 96 || i == 100 || i == 104) {
+		// 	printf("str1 value loc=%d value=%c", i, c);
+		// }
   
         // Skip the bytes not required
         // if (i >= from) {
@@ -201,10 +202,11 @@ byte 2: 53
          a++) {
 
 		str2[a] = d;
+		printf("str2 value loc=%d value=%c", a, d);
 
-		if (a == 96 || a == 100 || a == 104) {
-			printf("str1 value loc=%d value=%c", a, d);
-		}
+		// if (a == 96 || a == 100 || a == 104) {
+		// 	printf("str1 value loc=%d value=%c", a, d);
+		// }
   
         // Skip the bytes not required
         // if (i >= from) {
