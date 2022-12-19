@@ -94,7 +94,7 @@ int main(int argc, char **argv)
     // If the file exists and has
     // read permission
     // fptr1 = fopen(argv[1], "r");
-    fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/6156/output557030438000", "r");
+    fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000", "r");
   
     if (fptr1 == NULL) {
         return 1;
@@ -150,7 +150,7 @@ int main(int argc, char **argv)
   
     // Close the file
     fclose(fptr1);
-	fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/7171/output55bb7806b000", "r");
+	fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b2000", "r");
   
     if (fptr1 == NULL) {
         return 1;
