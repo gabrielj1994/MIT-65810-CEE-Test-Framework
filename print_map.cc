@@ -404,8 +404,10 @@ byte 2: 53
 
 		// if (*prtp1 != *prtp2) {
 		if (str1[counter] != str2[counter]) {
-			if (region_index < MAX_REGION_COUNT && hash_table_search(regionWhiteLists[region_index], counter) == NULL)
+			if (region_index < MAX_REGION_COUNT && hash_table_search(regionWhiteLists[region_index], counter) != NULL) {
+				++counter;
 				continue;
+			}
 			printf("\nByte difference");
 			printf("\nlocation: %d", counter);
 			printf("\nbyte 1: %02hhx", str1[counter]);
