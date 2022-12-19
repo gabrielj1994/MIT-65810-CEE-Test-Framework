@@ -154,7 +154,7 @@ int main(int argc, char **argv)
 	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b2000", "r");
 	fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000", "r");
   
-    if (fptr1 == NULL) {
+    if (fptr2 == NULL) {
         return 1;
     }
   
@@ -200,7 +200,7 @@ int main(int argc, char **argv)
 		}
 
 		// if (*prtp1 != *prtp2) {
-		if (str1[counter] != str2[counter]) {
+		if (str1[counter] != str1[counter]) {
 			printf("\nByte difference");
 			printf("\nlocation: %d", counter);
 			printf("\nbyte 1: %02hhx", str1[counter]);
