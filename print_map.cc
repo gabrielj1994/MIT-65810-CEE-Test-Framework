@@ -118,7 +118,7 @@ int main(int argc, char **argv)
         // Skip the bytes not required
         if (i >= from) {
 			if (j == 96 || j == 97 || j == 108) {
-				printf("str1 value loc=%d value=%c", j, c)
+				printf("str1 value loc=%d value=%c", j, c);
 			}
             str1[j] = c;
             j++;
