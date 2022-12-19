@@ -9,9 +9,7 @@ filepaths2=()
 #   echo $str1
 # done
 
-# for i in ${!filepaths1[@]}; do
-#   echo "element $i is ${filepaths1[$i]} ${filepaths2[$i]}"
-# done
+
 
 # printf ${filepaths1} | while read path ; do
 # printf "\nTesting"
@@ -22,6 +20,18 @@ ls -lrtad ${pid_dir1}/* | grep output\d* | while read line ; do
 echo ${line}
 file_path=$(echo ${line} | awk '{print $9}')
 echo ${file_path}
+filepaths1+=(${file_path})
+done
+
+ls -lrtad ${pid_dir2}/* | grep output\d* | while read line ; do
+echo ${line}
+file_path=$(echo ${line} | awk '{print $9}')
+echo ${file_path}
+filepaths2+=(${file_path})
+done
+
+for i in ${!filepaths1[@]}; do
+  echo "element $i is ${filepaths1[$i]} ${filepaths2[$i]}"
 done
 
 # today=`date +'%s'`
