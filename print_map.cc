@@ -73,7 +73,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <time.h>
-#include <omp.h>
+// #include <omp.h>
 
 #define MAX 2000
 
@@ -157,7 +157,8 @@ int main(int argc, char **argv)
     // Close the file
     fclose(fptr1);
 	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b2000", "r");
-	fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000_2", "r");
+	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000_2", "r");
+	fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000", "r");
   
     if (fptr2 == NULL) {
         return 1;
