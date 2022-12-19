@@ -68,17 +68,157 @@
 
 // #define MAX_LOG_LEN 4096
 #include <sched.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
+#include <string.h>
 #include <sys/wait.h>
 #include <time.h>
+#include <unistd.h>
 // #include <omp.h>
 
 #define MAX 2000
+#define SIZE 20
+#define MAX_REGION_COUNT 50
+#define MAX_WHITELIST_COUNT 50
+
+// Hard-Coded Whitelists
+// Hash-Table Implementation: https://www.tutorialspoint.com/data_structures_algorithms/hash_table_program_in_c.htm
+// TODO: Consider a simple bit-map over hash table
+
+struct DataItem {
+   int data;   
+   bool key;
+};
+
+struct DataItem** regionWhiteLists[MAX_REGION_COUNT];
+// struct DataItem* hashArray[SIZE]; 
+struct DataItem* dummyItem;
+struct DataItem* item;
+
+int hashCode(int key) {
+   return key % SIZE;
+}
+
+struct DataItem *hash_table_search(DataItem** hashArray, int key) {
+   //get the hash 
+   int hashIndex = hashCode(key);  
+	
+   //move in array until an empty 
+   while(hashArray[hashIndex] != NULL) {
+	
+      if(hashArray[hashIndex]->key == key)
+         return hashArray[hashIndex]; 
+			
+      //go to next cell
+      ++hashIndex;
+		
+      //wrap around the table
+      hashIndex %= SIZE;
+   }        
+	
+   return NULL;        
+}
+
+void hash_table_insert(DataItem** hashArray, int key, bool data) {
+
+   struct DataItem *item = (struct DataItem*) malloc(sizeof(struct DataItem));
+   item->data = data;  
+   item->key = key;
+
+   //get the hash 
+   int hashIndex = hashCode(key);
+
+   //move in array until an empty or deleted cell
+   while(hashArray[hashIndex] != NULL && hashArray[hashIndex]->key != -1) {
+      //go to next cell
+      ++hashIndex;
+		
+      //wrap around the table
+      hashIndex %= SIZE;
+   }
+	
+   hashArray[hashIndex] = item;
+}
+
+struct DataItem* hash_table_delete(DataItem** hashArray, struct DataItem* item) {
+   int key = item->key;
+
+   //get the hash 
+   int hashIndex = hashCode(key);
+
+   //move in array until an empty
+   while(hashArray[hashIndex] != NULL) {
+	
+      if(hashArray[hashIndex]->key == key) {
+         struct DataItem* temp = hashArray[hashIndex]; 
+			
+         //assign a dummy item at deleted position
+         hashArray[hashIndex] = dummyItem; 
+         return temp;
+      }
+		
+      //go to next cell
+      ++hashIndex;
+		
+      //wrap around the table
+      hashIndex %= SIZE;
+   }      
+	
+   return NULL;        
+}
+
+void inclusive_range_insert(DataItem** hashArray, int start_key, int end_key, bool data) {
+	for (int i = start_key; i < end_key+1; i++) {
+		hash_table_insert(hashArray, i, data);
+	}
+}
+
+void setup_differences_whitelist() {
+	dummyItem = (struct DataItem*) malloc(sizeof(struct DataItem));
+	dummyItem->data = -1;  
+	dummyItem->key = false;
+	for (int i = 0; i < MAX_REGION_COUNT; i++) {
+		// NOTE: Maximum 50 regions. Each region can have a maximum 50 white list items
+		regionWhiteLists[i] = (struct DataItem**) malloc(sizeof(struct DataItem*) * MAX_WHITELIST_COUNT);
+		switch(i) {
+		case 1:
+		case 2:
+		case 3:
+		case 4:
+			// No white list differences observed
+			break; /* optional */
+		case 5:
+		  	// hash_table_insert(regionWhiteLists[i], 9, true);
+		  	// hash_table_insert(regionWhiteLists[i], 10, true);
+		  	// hash_table_insert(regionWhiteLists[i], 11, true);
+		  	// hash_table_insert(regionWhiteLists[i], 12, true);
+		  	// hash_table_insert(regionWhiteLists[i], 13, true);
+			inclusive_range_insert(regionWhiteLists[i], 9, 13, true);
+			break;
+		default:
+			// No white list differences observed elsewhere
+			break;
+		}
+	}
+}
 
 int main(int argc, char **argv)
 {
+	printf("\nArg count: %d\n", argc);
+	/*
+	arg1: dump filepath1
+	arg2: dump filepath2
+	arg3: region index being compared (simple approach to handling whitelist) 
+	*/
+	if (argc < 4) {
+		printf("\nInsufficient args. 3 required.");
+		printf("\narg1: dump filepath1");
+		printf("\narg2: dump filepath2");
+		printf("\narg3: region index being compared (simple approach to handling whitelist)");
+		exit(0);
+	}
+
 	// Pointer to the file to be
     // read from
     FILE* fptr1;
@@ -88,17 +228,15 @@ int main(int argc, char **argv)
     // Stores the bytes to read
     char str1[MAX];
     char str2[MAX];
-    int i = 0, j, from, to;
+    int i = 0, j, from, to, region_index;
 	from = 0;
 	to = 1000;
+	setup_differences_whitelist();
 
-	printf("Arg count: %d", argc);
 
-	if (argc < 2) 
-		exit(0);
+	printf("\nComparing memory content from:\n%s\n%s", argv[1], argv[2]);
+	sscanf(argv[3], "%d", &region_index)
 
-	printf("Comparing memory content from:\n%s\n%s", argv[1], argv[2]);
-  
     // If the file exists and has
     // read permission
     // fptr1 = fopen(argv[1], "r");
@@ -255,6 +393,7 @@ byte 2: 53
 
 	//print from str[0]
 	printf("\nLOGGING: str[0] to %d offset\n", i);
+	int dif_counter = 0;
 	int counter = 0;
 	// while (prtp != '\0') {
 	while (counter < i) {
@@ -265,10 +404,13 @@ byte 2: 53
 
 		// if (*prtp1 != *prtp2) {
 		if (str1[counter] != str2[counter]) {
+			if (region_index < MAX_REGION_COUNT && hash_table_search(regionWhiteLists[region_index], counter) == NULL)
+				continue;
 			printf("\nByte difference");
 			printf("\nlocation: %d", counter);
 			printf("\nbyte 1: %02hhx", str1[counter]);
 			printf("\nbyte 2: %02hhx\n", str2[counter]);
+			++dif_counter;
 		}
 		// printf("%02hhx ", *prtp);
 		++counter;
@@ -277,6 +419,6 @@ byte 2: 53
 		// ++prtp1;
 		// ++prtp2;
 	}
-  
+	printf("\nTotal differences: %d\n", dif_counter);
     return 0;
 }
