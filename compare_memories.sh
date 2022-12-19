@@ -2,10 +2,10 @@
 
 pid_dir1=$1
 pid_dir2=$2
-filepaths1="/test/1\\n/test/2\\n"
+filepaths1="/test/1\n/test/2\n"
 
-echo ${filepaths1} | while read path ; do
-echo ${path}
+printf ${filepaths1} | while read path ; do
+printf ${path}
 done
 exit 0
 
