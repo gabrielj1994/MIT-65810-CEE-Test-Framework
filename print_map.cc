@@ -179,7 +179,7 @@ int main(int argc, char **argv)
                        && d != EOF;
          i++) {
 
-		str2 = d;
+		str2[i] = d;
   
         // Skip the bytes not required
         // if (i >= from) {
