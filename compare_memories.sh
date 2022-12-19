@@ -5,6 +5,7 @@ pid_dir2=$2
 filepaths1="/test/1\n/test/2\n"
 
 printf ${filepaths1} | while read path ; do
+echo "Testing"
 printf ${path}
 done
 exit 0
