@@ -87,7 +87,7 @@ int main(int argc, char **argv)
 	time_t start, end;
     double runTime;
     int limit = 100000;
-	int primes_arr[] = int[10000]; // expected 9592 with limit 100000
+	int primes_arr[10000]; // expected 9592 with limit 100000
 	while (true) {
 		start = time(NULL);
 		int num = 1,primes = 0;
@@ -115,8 +115,8 @@ int main(int argc, char **argv)
 		runTime = end - start;
 		printf("This machine calculated all %d prime numbers under %d in %g seconds\n",primes,limit,runTime);
 		// ADD Registers
-		register int = 2147483647;
-		register bool = true;
+		register int reg1 = 2147483647;
+		register bool reg2 = true;
 	
 
 		sleep(120);
