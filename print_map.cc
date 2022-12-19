@@ -99,7 +99,8 @@ int main(int argc, char **argv)
     // fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b3000", "r");
     // fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b4000", "r");
     // fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b5000", "r");
-    fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b7000", "r");
+    // fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b7000", "r");
+    fptr1 = fopen(argv[1], "r");
 // 	./dump_busy_loop/8424/output55fca01b3000  ./dump_busy_loop/8424/output55fca01b5000 
 // ./dump_busy_loop/8424/output55fca01b4000  ./dump_busy_loop/8424/output55fca01b6000  ./dump_busy_loop/8424/output55fca01b7000
 
@@ -187,7 +188,8 @@ byte 2: 53
 	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5af000", "r");
 	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b0000", "r");
 	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b1000", "r");
-	fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b3000", "r");
+	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b3000", "r");
+	fptr2 = fopen(argv[2], "r");
 
 
 	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000_2", "r");

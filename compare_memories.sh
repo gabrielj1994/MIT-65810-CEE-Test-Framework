@@ -31,7 +31,8 @@ filepaths2[${#filepaths2[@]}]=${file_path}
 done <<<$(ls -lrtad ${pid_dir2}/* | grep output\d*)
 
 for i in ${!filepaths1[@]}; do
-  echo "element $i is ${filepaths1[$i]} ${filepaths2[$i]}"
+  echo "element $i is ${filepaths1[$i]} ${filepaths1[$i]}"
+  sudo ./print_map ${filepaths1[$i]} ${filepaths1[$i]}
 done
 
 
