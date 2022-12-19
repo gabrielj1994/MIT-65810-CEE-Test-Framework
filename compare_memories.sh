@@ -2,12 +2,16 @@
 
 pid_dir1=$1
 pid_dir2=$2
-filepaths1="/test/1\n/test/2\n"
+filepaths1=("test1" "test2")
 
-printf ${filepaths1} | while read path ; do
-echo "Testing"
-printf ${path}
+for str in ${filepaths1[@]}; do
+  echo $str
 done
+
+# printf ${filepaths1} | while read path ; do
+# printf "\nTesting"
+# printf ${path}
+# done
 exit 0
 
 # today=`date +'%s'`
