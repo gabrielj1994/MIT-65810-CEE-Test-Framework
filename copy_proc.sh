@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo mkdir ./busy_loop_dump/$1
+sudo mkdir -p ./busy_loop_dump/$1
 sudo cp /proc/$1/a* ./busy_loop_dump/$1/
 sudo cp /proc/$1/b* ./busy_loop_dump/$1/
 sudo cp /proc/$1/c* ./busy_loop_dump/$1/
