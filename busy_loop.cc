@@ -111,6 +111,7 @@ int main(int argc, char **argv)
 		end = time(NULL);
 		runTime = end - start;
 		printf("This machine calculated all %d prime numbers under %d in %g seconds\n",primes,limit,runTime);
+		sleep(120);
 	}
     
 

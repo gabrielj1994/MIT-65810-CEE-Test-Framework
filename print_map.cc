@@ -199,6 +199,7 @@ int main(int argc, char **argv)
 
 		if (*prtp1 != *prtp2) {
 			printf("\nByte difference");
+			printf("\nlocation: %d", counter);
 			printf("\nbyte 1: %02hhx", *prtp1);
 			printf("\nbyte 2: %02hhx\n", *prtp2);
 		}
