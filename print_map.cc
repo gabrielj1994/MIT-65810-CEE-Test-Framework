@@ -82,6 +82,7 @@ int main(int argc, char **argv)
 	// Pointer to the file to be
     // read from
     FILE* fptr1;
+    FILE* fptr2;
     char c;
   
     // Stores the bytes to read
@@ -150,7 +151,8 @@ int main(int argc, char **argv)
   
     // Close the file
     fclose(fptr1);
-	fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000", "r");
+	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b2000", "r");
+	fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000", "r");
   
     if (fptr1 == NULL) {
         return 1;
@@ -165,7 +167,7 @@ int main(int argc, char **argv)
   
     // Loop to read required byte
     // of file
-	c = fgetc(fptr1);
+	c = fgetc(fptr2);
     for (i = 0, j = 0; i <= to
                        && c != EOF;
          i++) {
@@ -177,15 +179,15 @@ int main(int argc, char **argv)
         }
   
         // Get the characters
-        c = fgetc(fptr1);
+        c = fgetc(fptr2);
     }
 	// Close the file
-    fclose(fptr1);
+    fclose(fptr2);
 
 	// Print byte info
 	// char *data;
-	char *prtp1 = (char *)str1;
-	char *prtp2 = (char *)str2;
+	// char *prtp1 = (char *)str1;
+	// char *prtp2 = (char *)str2;
 
 	//print from str[0]
 	printf("\nLOGGING: str[0] to 1000 offset\n");
@@ -197,7 +199,8 @@ int main(int argc, char **argv)
 			break;
 		}
 
-		if (*prtp1 != *prtp2) {
+		// if (*prtp1 != *prtp2) {
+		if (str1[counter] != str2[counter]) {
 			printf("\nByte difference");
 			printf("\nlocation: %d", counter);
 			printf("\nbyte 1: %02hhx", *prtp1);
@@ -207,8 +210,8 @@ int main(int argc, char **argv)
 		++counter;
 		// if (counter % 4 == 0)
 		// 	printf("\n");
-		++prtp1;
-		++prtp2;
+		// ++prtp1;
+		// ++prtp2;
 	}
   
     return 0;
