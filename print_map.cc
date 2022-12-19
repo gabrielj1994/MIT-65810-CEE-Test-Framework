@@ -95,8 +95,11 @@ int main(int argc, char **argv)
     // If the file exists and has
     // read permission
     // fptr1 = fopen(argv[1], "r");
-    fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000", "r");
-	
+    // fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000", "r");
+    fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b3000", "r");
+// 	./dump_busy_loop/8424/output55fca01b3000  ./dump_busy_loop/8424/output55fca01b5000 
+// ./dump_busy_loop/8424/output55fca01b4000  ./dump_busy_loop/8424/output55fca01b6000  ./dump_busy_loop/8424/output55fca01b7000
+
 	/*
 	location: 96
 byte 1: 04
@@ -177,9 +180,14 @@ byte 2: 53
   
     // Close the file
     fclose(fptr1);
-	fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b2000", "r");
+	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b2000", "r");
+	fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5af000", "r");
+
+
 	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000_2", "r");
 	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000", "r");
+// 	./dump_busy_loop/8572/output5629db5af000  ./dump_busy_loop/8572/output5629db5b1000  ./dump_busy_loop/8572/output5629db5b3000
+// ./dump_busy_loop/8572/output5629db5b0000  ./dump_busy_loop/8572/output5629db5b2000
   
     if (fptr2 == NULL) {
         return 1;
