@@ -85,7 +85,8 @@ int main(int argc, char **argv)
     char c;
   
     // Stores the bytes to read
-    char str[MAX];
+    char str1[MAX];
+    char str2[MAX];
     int i = 0, j, from, to;
 	from = 0;
 	to = 1000;
@@ -108,13 +109,14 @@ int main(int argc, char **argv)
   
     // Loop to read required byte
     // of file
+	c = fgetc(fptr1);
     for (i = 0, j = 0; i <= to
                        && c != EOF;
          i++) {
   
         // Skip the bytes not required
         if (i >= from) {
-            str[j] = c;
+            str1[j] = c;
             j++;
         }
   
@@ -125,7 +127,65 @@ int main(int argc, char **argv)
 
 	// Print byte info
 	// char *data;
-	char *prtp = (char *)str;
+	// char *prtp = (char *)str1;
+
+	// //print from str[0]
+	// printf("\nLOGGING: str[0] to 1000 offset\n");
+	// int counter = 0;
+	// while (prtp != '\0') {
+	// while (counter < to) {
+	// 	if (counter >= to) {
+	// 		printf("\n Safety break, counter >= target");
+	// 		break;
+	// 	}
+	// 	printf("%02hhx ", *prtp);
+	// 	++counter;
+	// 	if (counter % 4 == 0)
+	// 		printf("\n");
+	// 	++prtp;
+	// }
+  
+    // Print the bytes as string
+    // printf("%s", str);
+  
+    // Close the file
+    fclose(fptr1);
+	fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/7171/output55bb7806b000", "r");
+  
+    if (fptr1 == NULL) {
+        return 1;
+    }
+  
+    // Input from the user range of
+    // bytes inclusive of from and to
+    // printf("Read bytes from: ");
+    // scanf("%d", &from);
+    // printf("Read bytes upto: ");
+    // scanf("%d", &to);
+  
+    // Loop to read required byte
+    // of file
+	c = fgetc(fptr1);
+    for (i = 0, j = 0; i <= to
+                       && c != EOF;
+         i++) {
+  
+        // Skip the bytes not required
+        if (i >= from) {
+            str2[j] = c;
+            j++;
+        }
+  
+        // Get the characters
+        c = fgetc(fptr1);
+    }
+	// Close the file
+    fclose(fptr1);
+
+	// Print byte info
+	// char *data;
+	char *prtp1 = (char *)str1;
+	char *prtp2 = (char *)str2;
 
 	//print from str[0]
 	printf("\nLOGGING: str[0] to 1000 offset\n");
@@ -136,18 +196,19 @@ int main(int argc, char **argv)
 			printf("\n Safety break, counter >= target");
 			break;
 		}
-		printf("%02hhx ", *prtp);
+
+		if (*prtp1 != *prtp2) {
+			printf("\nByte difference");
+			printf("\nbyte 1: %02hhx", *prtp1);
+			printf("\nbyte 2: %02hhx\n", *prtp2);
+		}
+		// printf("%02hhx ", *prtp);
 		++counter;
-		if (counter % 4 == 0)
-			printf("\n");
-		++prtp;
+		// if (counter % 4 == 0)
+		// 	printf("\n");
+		++prtp1;
+		++prtp2;
 	}
-  
-    // Print the bytes as string
-    // printf("%s", str);
-  
-    // Close the file
-    fclose(fptr1);
   
     return 0;
 }
