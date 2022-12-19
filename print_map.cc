@@ -114,15 +114,17 @@ int main(int argc, char **argv)
     for (i = 0, j = 0; i <= to
                        && c != EOF;
          i++) {
+		
+		str1[i] = c;
   
         // Skip the bytes not required
-        if (i >= from) {
-			if (j == 96 || j == 97 || j == 108) {
-				printf("str1 value loc=%d value=%c", j, c);
-			}
-            str1[j] = c;
-            j++;
-        }
+        // if (i >= from) {
+		// 	if (j == 96 || j == 97 || j == 108) {
+		// 		printf("str1 value loc=%d value=%c", j, c);
+		// 	}
+        //     str1[j] = c;
+        //     j++;
+        // }
   
         // Get the characters
         c = fgetc(fptr1);
@@ -176,15 +178,17 @@ int main(int argc, char **argv)
     for (i = 0, j = 0; i <= to
                        && d != EOF;
          i++) {
+
+		str2 = d;
   
         // Skip the bytes not required
-        if (i >= from) {
-			if (j == 96 || j == 97 || j == 108) {
-				printf("str2 value loc=%d value=%c", j, d);
-			}
-            str2[j] = d;
-            j++;
-        }
+        // if (i >= from) {
+		// 	if (j == 96 || j == 97 || j == 108) {
+		// 		printf("str2 value loc=%d value=%c", j, d);
+		// 	}
+        //     str2[j] = d;
+        //     j++;
+        // }
   
         // Get the characters
         d = fgetc(fptr2);
