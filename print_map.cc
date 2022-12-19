@@ -129,7 +129,7 @@ int main(int argc, char **argv)
 
 	//print from str[0]
 	printf("\nLOGGING: str[0] to 1000 offset\n");
-	uint16_t counter = 0;
+	int counter = 0;
 	// while (prtp != '\0') {
 	while (counter < to) {
 		if (counter >= to) {
