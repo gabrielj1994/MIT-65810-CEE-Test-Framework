@@ -96,6 +96,22 @@ int main(int argc, char **argv)
     // read permission
     // fptr1 = fopen(argv[1], "r");
     fptr1 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000", "r");
+	
+	/*
+	location: 96
+byte 1: 04
+byte 2: 00
+
+Byte difference
+location: 100
+byte 1: 04
+byte 2: 00
+
+Byte difference
+location: 104
+byte 1: 70
+byte 2: 53
+	*/
   
     if (fptr1 == NULL) {
         return 1;
@@ -116,6 +132,10 @@ int main(int argc, char **argv)
          i++) {
 		
 		str1[i] = c;
+
+		if (i == 96 || i == 100 || i == 104) {
+			printf("str1 value loc=%d value=%c", i, c);
+		}
   
         // Skip the bytes not required
         // if (i >= from) {
@@ -181,6 +201,10 @@ int main(int argc, char **argv)
          a++) {
 
 		str2[a] = d;
+
+		if (a == 96 || a == 100 || a == 104) {
+			printf("str1 value loc=%d value=%c", a, d);
+		}
   
         // Skip the bytes not required
         // if (i >= from) {
