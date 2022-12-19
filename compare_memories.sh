@@ -4,8 +4,9 @@ pid_dir1=$1
 pid_dir2=$2
 filepaths1=("test1" "test2")
 
-for str in ${filepaths1[@]}; do
-  echo $str
+for str1 str2 in ${filepaths1[@]}; do
+  echo $str1
+  echo $str2
 done
 
 # printf ${filepaths1} | while read path ; do
