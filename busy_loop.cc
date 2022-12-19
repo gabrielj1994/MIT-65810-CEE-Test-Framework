@@ -110,7 +110,7 @@ void dirty_run() {
 		// ADD Registers
 		register int reg1 = 2147483647;
 		register bool reg2 = true;
-		sleep(120);
+		sleep(300);
 	}
 }
 
