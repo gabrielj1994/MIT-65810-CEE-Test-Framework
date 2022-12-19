@@ -3,10 +3,14 @@
 pid_dir1=$1
 pid_dir2=$2
 filepaths1=("test1" "test2")
+filepaths2=("test3" "test4")
 
-for str1 str2 in ${filepaths1[@]}; do
-  echo $str1
-  echo $str2
+# for str1 in ${filepaths1[@]}; do
+#   echo $str1
+# done
+
+for i in ${!filepaths1[@]}; do
+  echo "element $i is ${filepaths1[$i]} ${filepaths2[$i]}"
 done
 
 # printf ${filepaths1} | while read path ; do
