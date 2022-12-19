@@ -18,7 +18,7 @@ filepaths2=()
 # printf ${path}
 # done
 
-ls -lrta ${pid_dir1} | grep output\d* | while read line ; do
+ls -lrtad ${pid_dir1} | grep output\d* | while read line ; do
 echo ${line}
 file_path=$(echo ${line} | awk '{print $9}')
 echo ${file_path}
