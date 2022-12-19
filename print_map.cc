@@ -125,7 +125,7 @@ int main(int argc, char **argv)
 
 	// Print byte info
 	// char *data;
-	char *prtp = (char *)str[0];
+	char *prtp = (char *)str;
 
 	//print from str[0]
 	printf("\nLOGGING: str[0] to 1000 offset\n");
