@@ -20,7 +20,7 @@ filepaths2=()
 
 ls -lrta ${pid_dir1} | grep output\d* | while read line ; do
 echo ${line}
-file_path=$(echo ${line} | awk '{print $8}')
+file_path=$(echo ${line} | awk '{print $9}')
 echo ${file_path}
 done
 
@@ -28,7 +28,7 @@ done
 # hdfs dfs -ls /file/Path/ | grep "^d" | while read line ; do
 # dir_date=$(echo ${line} | awk '{print $6}')
 # difference=$(( ( ${today} - $(date -d ${dir_date} +%s) ) / ( 24*60*60 ) ))
-# filePath=$(echo ${line} | awk '{print $8}')
+# filePath=$(echo ${line} | awk '{print $9}')
 
 
 # if [ ${difference} -gt 10 ]; then
