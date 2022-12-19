@@ -83,7 +83,7 @@ int main(int argc, char **argv)
     // read from
     FILE* fptr1;
     FILE* fptr2;
-    char c;
+    char c, d;
   
     // Stores the bytes to read
     char str1[MAX];
@@ -152,7 +152,7 @@ int main(int argc, char **argv)
     // Close the file
     fclose(fptr1);
 	// fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8572/output5629db5b2000", "r");
-	fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000", "r");
+	fptr2 = fopen("/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000_2", "r");
   
     if (fptr2 == NULL) {
         return 1;
@@ -167,19 +167,19 @@ int main(int argc, char **argv)
   
     // Loop to read required byte
     // of file
-	c = fgetc(fptr2);
+	d = fgetc(fptr2);
     for (i = 0, j = 0; i <= to
                        && c != EOF;
          i++) {
   
         // Skip the bytes not required
         if (i >= from) {
-            str2[j] = c;
+            str2[j] = d;
             j++;
         }
   
         // Get the characters
-        c = fgetc(fptr2);
+        d = fgetc(fptr2);
     }
 	// Close the file
     fclose(fptr2);
@@ -200,7 +200,7 @@ int main(int argc, char **argv)
 		}
 
 		// if (*prtp1 != *prtp2) {
-		if (str1[counter] != str1[counter]) {
+		if (str1[counter] != str2[counter]) {
 			printf("\nByte difference");
 			printf("\nlocation: %d", counter);
 			printf("\nbyte 1: %02hhx", str1[counter]);
