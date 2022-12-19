@@ -173,13 +173,13 @@ int main(int argc, char **argv)
     // Loop to read required byte
     // of file
 	d = fgetc(fptr2);
-	i = 0;
-	j = 0;
-    for (i = 0, j = 0; i <= to
+	int a = 0;
+	int f = 0;
+    for (a = 0, f = 0; a <= to
                        && d != EOF;
-         i++) {
+         a++) {
 
-		str2[i] = d;
+		str2[a] = d;
   
         // Skip the bytes not required
         // if (i >= from) {
