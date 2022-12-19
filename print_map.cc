@@ -132,7 +132,7 @@ byte 2: 53
          i++) {
 		
 		str1[i] = c;
-		printf("str1 value loc=%d value=%c", i, c);
+		// printf("str1 value loc=%d value=%c", i, c);
 
 		// if (i == 96 || i == 100 || i == 104) {
 		// 	printf("str1 value loc=%d value=%c", i, c);
@@ -202,7 +202,7 @@ byte 2: 53
          a++) {
 
 		str2[a] = d;
-		printf("str2 value loc=%d value=%c", a, d);
+		// printf("str2 value loc=%d value=%c", a, d);
 
 		// if (a == 96 || a == 100 || a == 104) {
 		// 	printf("str1 value loc=%d value=%c", a, d);
@@ -232,8 +232,8 @@ byte 2: 53
 	printf("\nLOGGING: str[0] to 1000 offset\n");
 	int counter = 0;
 	// while (prtp != '\0') {
-	while (counter < to) {
-		if (counter >= to) {
+	while (counter < i) {
+		if (counter >= i) {
 			printf("\n Safety break, counter >= target");
 			break;
 		}
