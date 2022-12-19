@@ -203,8 +203,8 @@ int main(int argc, char **argv)
 		if (str1[counter] != str2[counter]) {
 			printf("\nByte difference");
 			printf("\nlocation: %d", counter);
-			printf("\nbyte 1: %02hhx", *prtp1);
-			printf("\nbyte 2: %02hhx\n", *prtp2);
+			printf("\nbyte 1: %02hhx", str1[counter]);
+			printf("\nbyte 2: %02hhx\n", str2[counter]);
 		}
 		// printf("%02hhx ", *prtp);
 		++counter;
