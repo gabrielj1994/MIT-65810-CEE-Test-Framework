@@ -16,23 +16,24 @@ filepaths2=("dummy2")
 # printf ${path}
 # done
 
-ls -lrtad ${pid_dir1}/* | grep output\d* | while read line ; do
+while read line ; do
 echo ${line}
 file_path=$(echo ${line} | awk '{print $9}')
 echo ${file_path}
 filepaths1[${#filepaths1[@]}]="foo"
-done
+done <<<$(ls -lrtad ${pid_dir1}/* | grep output\d*)
 
-ls -lrtad ${pid_dir2}/* | grep output\d* | while read line ; do
+while read line ; do
 echo ${line}
 file_path=$(echo ${line} | awk '{print $9}')
 echo ${file_path}
 filepaths2[${#filepaths2[@]}]="bar"
-done
+done <<<$(ls -lrtad ${pid_dir2}/* | grep output\d*)
 
 for i in ${!filepaths1[@]}; do
   echo "element $i is ${filepaths1[$i]} ${filepaths2[$i]}"
 done
+
 
 # today=`date +'%s'`
 # hdfs dfs -ls /file/Path/ | grep "^d" | while read line ; do
