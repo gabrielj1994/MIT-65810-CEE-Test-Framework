@@ -242,6 +242,8 @@ byte 2: 53
 	// char *prtp1 = (char *)str1;
 	// char *prtp2 = (char *)str2;
 
+	// TODO: Add to white list 9-13 of 5th memory region (the rw region)
+
 	//print from str[0]
 	printf("\nLOGGING: str[0] to %d offset\n", i);
 	int counter = 0;
