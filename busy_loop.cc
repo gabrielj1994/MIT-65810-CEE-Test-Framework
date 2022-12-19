@@ -103,7 +103,7 @@ int main(int argc, char **argv)
 			if(i == num)
 				primes++;
 
-			if(primes % 25000 == 0)
+			if(primes % 20000 == 0)
 				sleep(1);
 	//      printf("%d prime numbers calculated\n",primes);
 		}
