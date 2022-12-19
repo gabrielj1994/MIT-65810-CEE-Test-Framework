@@ -235,7 +235,7 @@ int main(int argc, char **argv)
 
 
 	printf("\nComparing memory content from:\n%s\n%s", argv[1], argv[2]);
-	sscanf(argv[3], "%d", &region_index)
+	sscanf(argv[3], "%d", &region_index);
 
     // If the file exists and has
     // read permission
