@@ -75,7 +75,7 @@
 #include <time.h>
 #include <omp.h>
 
-#define MAX 1000
+#define MAX 2000
 
 int main(int argc, char **argv)
 {
@@ -117,6 +117,9 @@ int main(int argc, char **argv)
   
         // Skip the bytes not required
         if (i >= from) {
+			if (j == 96 || j == 97 || j == 108) {
+				printf("str1 value loc=%d value=%c", j, c)
+			}
             str1[j] = c;
             j++;
         }
@@ -176,6 +179,9 @@ int main(int argc, char **argv)
   
         // Skip the bytes not required
         if (i >= from) {
+			if (j == 96 || j == 97 || j == 108) {
+				printf("str2 value loc=%d value=%c", j, d)
+			}
             str2[j] = d;
             j++;
         }
