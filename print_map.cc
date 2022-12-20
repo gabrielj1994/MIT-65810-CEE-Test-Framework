@@ -78,7 +78,6 @@
 // #include <omp.h>
 
 #define MAX 2000
-#define SIZE 20
 #define MAX_REGION_COUNT 50
 #define MAX_WHITELIST_COUNT 1000
 
@@ -97,7 +96,7 @@ struct DataItem* dummyItem;
 struct DataItem* item;
 
 int hashCode(int key) {
-   return key % SIZE;
+   return key % MAX_WHITELIST_COUNT;
 }
 
 struct DataItem *hash_table_search(DataItem** hashArray, int key) {
@@ -121,6 +120,8 @@ struct DataItem *hash_table_search(DataItem** hashArray, int key) {
 }
 
 void hash_table_insert(DataItem** hashArray, int key, bool data) {
+	printf("\nAdding whitelist [key:%d]", key);
+
 
    struct DataItem *item = (struct DataItem*) malloc(sizeof(struct DataItem));
    item->data = data;  
