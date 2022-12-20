@@ -80,7 +80,7 @@
 #define MAX 2000
 #define SIZE 20
 #define MAX_REGION_COUNT 50
-#define MAX_WHITELIST_COUNT 50
+#define MAX_WHITELIST_COUNT 500
 
 // Hard-Coded Whitelists
 // Hash-Table Implementation: https://www.tutorialspoint.com/data_structures_algorithms/hash_table_program_in_c.htm
