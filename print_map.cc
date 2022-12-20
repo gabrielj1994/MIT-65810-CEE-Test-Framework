@@ -80,7 +80,7 @@
 #define MAX 2000
 #define SIZE 20
 #define MAX_REGION_COUNT 50
-#define MAX_WHITELIST_COUNT 500
+#define MAX_WHITELIST_COUNT 1000
 
 // Hard-Coded Whitelists
 // Hash-Table Implementation: https://www.tutorialspoint.com/data_structures_algorithms/hash_table_program_in_c.htm
@@ -179,6 +179,8 @@ void setup_differences_whitelist() {
 	dummyItem->data = -1;  
 	dummyItem->key = false;
 	for (int i = 0; i < MAX_REGION_COUNT; i++) {
+		printf("\nAdding whitelist [region:%d]", i);
+
 		// NOTE: Maximum 50 regions. Each region can have a maximum 50 white list items
 		regionWhiteLists[i] = (struct DataItem**) malloc(sizeof(struct DataItem*) * MAX_WHITELIST_COUNT);
 		switch(i) {
