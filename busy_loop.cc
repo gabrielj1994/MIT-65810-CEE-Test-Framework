@@ -75,7 +75,7 @@
 #include <time.h>
 #include <omp.h>
 
-void dirty_run() {
+void dirty_run(bool *divergent_flag) {
 	// Busy Loop
 	time_t start, end;
     double runTime;
@@ -95,12 +95,14 @@ void dirty_run() {
 				i++; 
 			}
 			if(i == num) {
+				if (*divergent_flag)
+					num += 7;
 				primes_arr[primes] = num;
 				primes++;
 			}
 
-			if(primes % 20000 == 0)
-				sleep(1);
+			// if(primes % 20000 == 0)
+				// sleep(1);
 	//      printf("%d prime numbers calculated\n",primes);
 		}
 
@@ -114,7 +116,7 @@ void dirty_run() {
 	}
 }
 
-void clean_run() {
+void clean_run(bool *divergent_flag) {
 	// Busy Loop
 	time_t start, end;
     double runTime;
@@ -128,6 +130,8 @@ void clean_run() {
 		for (num = 1; num <= limit; num++) { 
 			int i = 2; 
 			while(i <= num) { 
+				if (*divergent_flag)
+					num += 7;
 				if(num % i == 0)
 					break;
 				i++; 
@@ -136,8 +140,8 @@ void clean_run() {
 				primes++;
 			}
 
-			if(primes % 20000 == 0)
-				sleep(1);
+			// if(primes % 20000 == 0)
+				// sleep(1);
 	//      printf("%d prime numbers calculated\n",primes);
 		}
 
@@ -150,12 +154,34 @@ void clean_run() {
 
 int main(int argc, char **argv)
 {
+	printf("\nArg count: %d\n", argc);
+	/*
+	arg1: dump filepath1
+	arg2: dump filepath2
+	arg3: region index being compared (simple approach to handling whitelist) 
+	*/
+	if (argc < 4) {
+		printf("\nInsufficient args. 3 required.");
+		printf("\narg1: target core");
+		printf("\narg2: clean execution flag");
+		printf("\narg3: divergent execution flag for odd cores");
+		exit(0);
+	}
+
+	int target_core;
+	sscanf(argv[1], "%d", &target_core);
+	bool clean_flag = (bool)(argv[2] - '0' > 0);
+	bool divergent_flag = (bool)(argv[3] - '0' > 0) && (target_core % 2) == 1;
+
 	cpu_set_t set;
 	CPU_ZERO(&set);        // clear cpu mask
-	CPU_SET(1, &set);      // set cpu 1
+	CPU_SET(target_core, &set);      // set cpu 1
 	sched_setaffinity(0, sizeof(cpu_set_t), &set);  // 0 is the calling process
 
-	// dirty_run();
-	clean_run();
+	if (clean_flag) {
+		clean_run(&divergent_flag);
+	} else {
+		dirty_run(&divergent_flag);
+	}
     return 0;
 }
