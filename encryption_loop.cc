@@ -79,91 +79,14 @@
 
 int x, y, n, t, i, flag;
 long int e[50], d[50], temp[50], j, m[50], en[50];
-char msg[50];
-char msg_original[50];
-char msg_intermediary[50];
+char msg[100];
+char msg_original[100];
+char msg_final[100];
 int prime(long int);
 void encryption_key();
 long int cd(long int);
 void encrypt();
 void decrypt();
-
-// void dirty_run(bool *divergent_flag) {
-// 	// Busy Loop
-// 	time_t start, end;
-//     double runTime;
-//     int limit = 100000;
-// 	int primes_arr[10000]; // expected 9592 with limit 100000
-// 	while (true) {
-// 		start = time(NULL);
-// 		int num = 1,primes = 0;
-
-
-// 	// #pragma omp parallel for schedule(dynamic) reduction(+ : primes)
-// 		for (num = 1; num <= limit; num++) { 
-// 			int i = 2; 
-// 			while(i <= num) { 
-// 				if(num % i == 0)
-// 					break;
-// 				i++; 
-// 			}
-// 			if(i == num) {
-// 				if (*divergent_flag)
-// 					num += 7;
-// 				primes_arr[primes] = num;
-// 				primes++;
-// 			}
-
-// 			// if(primes % 20000 == 0)
-// 				// sleep(1);
-// 	//      printf("%d prime numbers calculated\n",primes);
-// 		}
-
-// 		end = time(NULL);
-// 		runTime = end - start;
-// 		printf("This machine calculated all %d prime numbers under %d in %g seconds\n",primes,limit,runTime);
-// 		// ADD Registers
-// 		register int reg1 = 2147483647;
-// 		register bool reg2 = true;
-// 		sleep(300);
-// 	}
-// }
-
-// void clean_run(bool *divergent_flag) {
-// 	// Busy Loop
-// 	time_t start, end;
-//     double runTime;
-//     int limit = 100000;
-// 	while (true) {
-// 		start = time(NULL);
-// 		int num = 1,primes = 0;
-
-
-// 	// #pragma omp parallel for schedule(dynamic) reduction(+ : primes)
-// 		for (num = 1; num <= limit; num++) { 
-// 			int i = 2; 
-// 			while(i <= num) { 
-// 				if (*divergent_flag)
-// 					num += 7;
-// 				if(num % i == 0)
-// 					break;
-// 				i++; 
-// 			}
-// 			if(i == num) {
-// 				primes++;
-// 			}
-
-// 			// if(primes % 20000 == 0)
-// 				// sleep(1);
-// 	//      printf("%d prime numbers calculated\n",primes);
-// 		}
-
-// 		end = time(NULL);
-// 		runTime = end - start;
-// 		printf("This machine calculated all %d prime numbers under %d in %g seconds\n",primes,limit,runTime);
-// 		sleep(120);
-// 	}
-// }
 
 int prime(long int pr)
 {
@@ -236,7 +159,7 @@ void encrypt()
   en[i] = -1;
   printf("\n\nTHE ENCRYPTED MESSAGE IS\n");
   for(i = 0; en[i] != -1; i++)
-    printf("%c", en[i]);
+    printf("%ld", en[i]);
 }
 
 //function to decrypt the message
@@ -260,7 +183,7 @@ void decrypt()
   m[i] = -1;
   printf("\n\nTHE DECRYPTED MESSAGE IS\n");
   for(i = 0; m[i] != -1; i++)
-   printf("%c", m[i]);
+   printf("%ld", m[i]);
   printf("\n");
 }
 
@@ -311,7 +234,7 @@ int main(int argc, char **argv)
 
 	// scanf("%s",msg);
 	while (true) {
-		msg = "This is a baseline string";
+		strcpy(msg, "This is a baseline string");
 		strcpy(msg_original, msg);
 		for(i = 0; msg[i] != NULL; i++)
 			m[i] = msg[i];
@@ -323,12 +246,14 @@ int main(int argc, char **argv)
 			printf("\n%ld\t%ld", e[i], d[i]);
 		encrypt();
 		decrypt();
-		for(i = 0; m[i] != -1; i++) {
-			if (m[i] != msg_original[i]) {
+
+		strcpy(msg_final, (char*)m);
+		for(i = 0; msg_final[i] != -1; i++) {
+			if (msg_final[i] != msg_original[i]) {
 				printf("Encryption process failure.");
 				printf("Character index: %d", i);
 				printf("Original character: %c", msg_original[i]);
-				printf("Translated character: %c", m[i]);
+				printf("Translated character: %c", msg_final[i]);
 			}
 		}
 
