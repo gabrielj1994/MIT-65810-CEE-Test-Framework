@@ -198,14 +198,13 @@ int main(int argc, char **argv)
 	if (argc < 3) {
 		printf("\nInsufficient args. 2 required.");
 		printf("\narg1: target core");
-		printf("\narg3: divergent execution flag for odd cores");
+		printf("\narg2: divergent execution flag for odd cores");
 		exit(0);
 	}
 
 	int target_core;
 	sscanf(argv[1], "%d", &target_core);
-	bool clean_flag = (bool)(argv[2] - '0' > 0);
-	bool divergent_flag = (bool)(argv[3] - '0' > 0) && (target_core % 2) == 1;
+	bool divergent_flag = (bool)(argv[2] - '0' > 0) && (target_core % 2) == 1;
 
 	cpu_set_t set;
 	CPU_ZERO(&set);        // clear cpu mask
