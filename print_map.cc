@@ -78,6 +78,7 @@
 // #include <omp.h>
 
 #define MAX 2000
+#define SIZE 1000
 #define MAX_REGION_COUNT 50
 #define MAX_WHITELIST_COUNT 1000
 
@@ -96,7 +97,7 @@ struct DataItem* dummyItem;
 struct DataItem* item;
 
 int hashCode(int key) {
-   return key % MAX_WHITELIST_COUNT;
+   return key % SIZE;
 }
 
 struct DataItem *hash_table_search(DataItem** hashArray, int key) {
