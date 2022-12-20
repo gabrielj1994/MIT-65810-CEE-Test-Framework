@@ -1,0 +1,440 @@
+whitelist
+cat ~/compare_8424_output55fca01b7000_8572_output5629db5b3000.log
+
+LOGGING: str[0] to 1001 offset
+
+Byte difference
+location: 9
+byte 1: 70
+byte 2: 30
+
+Byte difference
+location: 10
+byte 1: 1b
+byte 2: 5b
+
+Byte difference
+location: 11
+byte 1: a0
+byte 2: db
+
+Byte difference
+location: 12
+byte 1: fc
+byte 2: 29
+
+Byte difference
+location: 13
+byte 1: 55
+byte 2: 56
+
+====
+memory region 13
+inclusive_range_insert(regionWhiteLists[i], 25, 28, true);
+inclusive_range_insert(regionWhiteLists[i], 33, 36, true);
+inclusive_range_insert(regionWhiteLists[i], 41, 44, true);
+inclusive_range_insert(regionWhiteLists[i], 49, 52, true);
+inclusive_range_insert(regionWhiteLists[i], 57, 60, true);
+inclusive_range_insert(regionWhiteLists[i], 65, 68, true);
+inclusive_range_insert(regionWhiteLists[i], 73, 76, true);
+inclusive_range_insert(regionWhiteLists[i], 97, 100, true);
+inclusive_range_insert(regionWhiteLists[i], 113, 116, true);
+
+====
+/users/gabrielj/dump_test_14980_15221/0_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/10_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/11_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/12_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/13_comparisons.log:Total differences: 36
+/users/gabrielj/dump_test_14980_15221/14_comparisons.log:Total differences: 154
+/users/gabrielj/dump_test_14980_15221/15_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/1_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/2_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/3_comparisons.log:Total differences: 5
+/users/gabrielj/dump_test_14980_15221/4_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/5_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/6_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/7_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_15221/8_comparisons.log:Total differences: 196
+/users/gabrielj/dump_test_14980_15221/9_comparisons.log:Total differences: 0
+
+====
+
+/users/gabrielj/dump_test_14980_16240/0_comparisons.log:Total differences: 85
+/users/gabrielj/dump_test_14980_16240/10_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_16240/11_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_16240/12_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_16240/13_comparisons.log:Total differences: 36
+/users/gabrielj/dump_test_14980_16240/14_comparisons.log:Total differences: 155
+/users/gabrielj/dump_test_14980_16240/15_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_16240/1_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_16240/2_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_16240/3_comparisons.log:Total differences: 5
+/users/gabrielj/dump_test_14980_16240/4_comparisons.log:Total differences: 1
+/users/gabrielj/dump_test_14980_16240/5_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_16240/6_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_16240/7_comparisons.log:Total differences: 0
+/users/gabrielj/dump_test_14980_16240/8_comparisons.log:Total differences: 196
+/users/gabrielj/dump_test_14980_16240/9_comparisons.log:Total differences: 0
+
+===
+region 14
+
+location: (\d*)
+inclusive_range_insert(regionWhiteLists[i], $1, 13, true);
+
+hash_table_insert(regionWhiteLists[i], 1, true);
+hash_table_insert(regionWhiteLists[i], 2, true);
+hash_table_insert(regionWhiteLists[i], 3, true);
+hash_table_insert(regionWhiteLists[i], 4, true);
+hash_table_insert(regionWhiteLists[i], 32, true);
+hash_table_insert(regionWhiteLists[i], 33, true);
+hash_table_insert(regionWhiteLists[i], 34, true);
+hash_table_insert(regionWhiteLists[i], 81, true);
+hash_table_insert(regionWhiteLists[i], 82, true);
+hash_table_insert(regionWhiteLists[i], 83, true);
+hash_table_insert(regionWhiteLists[i], 84, true);
+hash_table_insert(regionWhiteLists[i], 85, true);
+hash_table_insert(regionWhiteLists[i], 89, true);
+hash_table_insert(regionWhiteLists[i], 90, true);
+hash_table_insert(regionWhiteLists[i], 91, true);
+hash_table_insert(regionWhiteLists[i], 92, true);
+hash_table_insert(regionWhiteLists[i], 209, true);
+hash_table_insert(regionWhiteLists[i], 210, true);
+hash_table_insert(regionWhiteLists[i], 211, true);
+hash_table_insert(regionWhiteLists[i], 212, true);
+hash_table_insert(regionWhiteLists[i], 233, true);
+hash_table_insert(regionWhiteLists[i], 234, true);
+hash_table_insert(regionWhiteLists[i], 235, true);
+hash_table_insert(regionWhiteLists[i], 236, true);
+hash_table_insert(regionWhiteLists[i], 241, true);
+hash_table_insert(regionWhiteLists[i], 242, true);
+hash_table_insert(regionWhiteLists[i], 243, true);
+hash_table_insert(regionWhiteLists[i], 244, true);
+hash_table_insert(regionWhiteLists[i], 249, true);
+hash_table_insert(regionWhiteLists[i], 250, true);
+hash_table_insert(regionWhiteLists[i], 251, true);
+hash_table_insert(regionWhiteLists[i], 252, true);
+hash_table_insert(regionWhiteLists[i], 273, true);
+hash_table_insert(regionWhiteLists[i], 274, true);
+hash_table_insert(regionWhiteLists[i], 275, true);
+hash_table_insert(regionWhiteLists[i], 276, true);
+hash_table_insert(regionWhiteLists[i], 277, true);
+hash_table_insert(regionWhiteLists[i], 312, true);
+hash_table_insert(regionWhiteLists[i], 313, true);
+hash_table_insert(regionWhiteLists[i], 314, true);
+hash_table_insert(regionWhiteLists[i], 315, true);
+hash_table_insert(regionWhiteLists[i], 361, true);
+hash_table_insert(regionWhiteLists[i], 362, true);
+hash_table_insert(regionWhiteLists[i], 363, true);
+hash_table_insert(regionWhiteLists[i], 364, true);
+hash_table_insert(regionWhiteLists[i], 369, true);
+hash_table_insert(regionWhiteLists[i], 370, true);
+hash_table_insert(regionWhiteLists[i], 371, true);
+hash_table_insert(regionWhiteLists[i], 372, true);
+hash_table_insert(regionWhiteLists[i], 385, true);
+hash_table_insert(regionWhiteLists[i], 386, true);
+hash_table_insert(regionWhiteLists[i], 387, true);
+hash_table_insert(regionWhiteLists[i], 388, true);
+hash_table_insert(regionWhiteLists[i], 401, true);
+hash_table_insert(regionWhiteLists[i], 402, true);
+hash_table_insert(regionWhiteLists[i], 403, true);
+hash_table_insert(regionWhiteLists[i], 404, true);
+hash_table_insert(regionWhiteLists[i], 405, true);
+hash_table_insert(regionWhiteLists[i], 409, true);
+hash_table_insert(regionWhiteLists[i], 410, true);
+hash_table_insert(regionWhiteLists[i], 411, true);
+hash_table_insert(regionWhiteLists[i], 412, true);
+hash_table_insert(regionWhiteLists[i], 417, true);
+hash_table_insert(regionWhiteLists[i], 418, true);
+hash_table_insert(regionWhiteLists[i], 419, true);
+hash_table_insert(regionWhiteLists[i], 420, true);
+hash_table_insert(regionWhiteLists[i], 421, true);
+hash_table_insert(regionWhiteLists[i], 425, true);
+hash_table_insert(regionWhiteLists[i], 426, true);
+hash_table_insert(regionWhiteLists[i], 427, true);
+hash_table_insert(regionWhiteLists[i], 428, true);
+hash_table_insert(regionWhiteLists[i], 441, true);
+hash_table_insert(regionWhiteLists[i], 442, true);
+hash_table_insert(regionWhiteLists[i], 443, true);
+hash_table_insert(regionWhiteLists[i], 444, true);
+hash_table_insert(regionWhiteLists[i], 457, true);
+hash_table_insert(regionWhiteLists[i], 458, true);
+hash_table_insert(regionWhiteLists[i], 459, true);
+hash_table_insert(regionWhiteLists[i], 460, true);
+hash_table_insert(regionWhiteLists[i], 473, true);
+hash_table_insert(regionWhiteLists[i], 474, true);
+hash_table_insert(regionWhiteLists[i], 475, true);
+hash_table_insert(regionWhiteLists[i], 476, true);
+hash_table_insert(regionWhiteLists[i], 477, true);
+hash_table_insert(regionWhiteLists[i], 481, true);
+hash_table_insert(regionWhiteLists[i], 482, true);
+hash_table_insert(regionWhiteLists[i], 483, true);
+hash_table_insert(regionWhiteLists[i], 484, true);
+hash_table_insert(regionWhiteLists[i], 485, true);
+hash_table_insert(regionWhiteLists[i], 489, true);
+hash_table_insert(regionWhiteLists[i], 490, true);
+hash_table_insert(regionWhiteLists[i], 491, true);
+hash_table_insert(regionWhiteLists[i], 492, true);
+hash_table_insert(regionWhiteLists[i], 493, true);
+hash_table_insert(regionWhiteLists[i], 505, true);
+hash_table_insert(regionWhiteLists[i], 506, true);
+hash_table_insert(regionWhiteLists[i], 507, true);
+hash_table_insert(regionWhiteLists[i], 508, true);
+hash_table_insert(regionWhiteLists[i], 509, true);
+hash_table_insert(regionWhiteLists[i], 513, true);
+hash_table_insert(regionWhiteLists[i], 514, true);
+hash_table_insert(regionWhiteLists[i], 515, true);
+hash_table_insert(regionWhiteLists[i], 516, true);
+hash_table_insert(regionWhiteLists[i], 517, true);
+hash_table_insert(regionWhiteLists[i], 521, true);
+hash_table_insert(regionWhiteLists[i], 522, true);
+hash_table_insert(regionWhiteLists[i], 523, true);
+hash_table_insert(regionWhiteLists[i], 524, true);
+hash_table_insert(regionWhiteLists[i], 525, true);
+hash_table_insert(regionWhiteLists[i], 529, true);
+hash_table_insert(regionWhiteLists[i], 530, true);
+hash_table_insert(regionWhiteLists[i], 531, true);
+hash_table_insert(regionWhiteLists[i], 532, true);
+hash_table_insert(regionWhiteLists[i], 533, true);
+hash_table_insert(regionWhiteLists[i], 537, true);
+hash_table_insert(regionWhiteLists[i], 538, true);
+hash_table_insert(regionWhiteLists[i], 539, true);
+hash_table_insert(regionWhiteLists[i], 540, true);
+hash_table_insert(regionWhiteLists[i], 541, true);
+hash_table_insert(regionWhiteLists[i], 545, true);
+hash_table_insert(regionWhiteLists[i], 546, true);
+hash_table_insert(regionWhiteLists[i], 547, true);
+hash_table_insert(regionWhiteLists[i], 548, true);
+hash_table_insert(regionWhiteLists[i], 549, true);
+hash_table_insert(regionWhiteLists[i], 553, true);
+hash_table_insert(regionWhiteLists[i], 554, true);
+hash_table_insert(regionWhiteLists[i], 555, true);
+hash_table_insert(regionWhiteLists[i], 556, true);
+hash_table_insert(regionWhiteLists[i], 557, true);
+hash_table_insert(regionWhiteLists[i], 561, true);
+hash_table_insert(regionWhiteLists[i], 562, true);
+hash_table_insert(regionWhiteLists[i], 563, true);
+hash_table_insert(regionWhiteLists[i], 564, true);
+hash_table_insert(regionWhiteLists[i], 565, true);
+hash_table_insert(regionWhiteLists[i], 569, true);
+hash_table_insert(regionWhiteLists[i], 570, true);
+hash_table_insert(regionWhiteLists[i], 571, true);
+hash_table_insert(regionWhiteLists[i], 572, true);
+hash_table_insert(regionWhiteLists[i], 573, true);
+hash_table_insert(regionWhiteLists[i], 625, true);
+hash_table_insert(regionWhiteLists[i], 626, true);
+hash_table_insert(regionWhiteLists[i], 627, true);
+hash_table_insert(regionWhiteLists[i], 628, true);
+hash_table_insert(regionWhiteLists[i], 629, true);
+hash_table_insert(regionWhiteLists[i], 633, true);
+hash_table_insert(regionWhiteLists[i], 634, true);
+hash_table_insert(regionWhiteLists[i], 635, true);
+hash_table_insert(regionWhiteLists[i], 636, true);
+hash_table_insert(regionWhiteLists[i], 637, true);
+hash_table_insert(regionWhiteLists[i], 649, true);
+hash_table_insert(regionWhiteLists[i], 650, true);
+hash_table_insert(regionWhiteLists[i], 651, true);
+hash_table_insert(regionWhiteLists[i], 652, true);
+hash_table_insert(regionWhiteLists[i], 653, true);
+
+===
+
+region 8
+
+hash_table_insert(regionWhiteLists[i], 9, true);
+hash_table_insert(regionWhiteLists[i], 10, true);
+hash_table_insert(regionWhiteLists[i], 11, true);
+hash_table_insert(regionWhiteLists[i], 12, true);
+hash_table_insert(regionWhiteLists[i], 17, true);
+hash_table_insert(regionWhiteLists[i], 18, true);
+hash_table_insert(regionWhiteLists[i], 19, true);
+hash_table_insert(regionWhiteLists[i], 20, true);
+hash_table_insert(regionWhiteLists[i], 25, true);
+hash_table_insert(regionWhiteLists[i], 26, true);
+hash_table_insert(regionWhiteLists[i], 27, true);
+hash_table_insert(regionWhiteLists[i], 28, true);
+hash_table_insert(regionWhiteLists[i], 33, true);
+hash_table_insert(regionWhiteLists[i], 34, true);
+hash_table_insert(regionWhiteLists[i], 35, true);
+hash_table_insert(regionWhiteLists[i], 36, true);
+hash_table_insert(regionWhiteLists[i], 41, true);
+hash_table_insert(regionWhiteLists[i], 42, true);
+hash_table_insert(regionWhiteLists[i], 43, true);
+hash_table_insert(regionWhiteLists[i], 44, true);
+hash_table_insert(regionWhiteLists[i], 49, true);
+hash_table_insert(regionWhiteLists[i], 50, true);
+hash_table_insert(regionWhiteLists[i], 51, true);
+hash_table_insert(regionWhiteLists[i], 52, true);
+hash_table_insert(regionWhiteLists[i], 57, true);
+hash_table_insert(regionWhiteLists[i], 58, true);
+hash_table_insert(regionWhiteLists[i], 59, true);
+hash_table_insert(regionWhiteLists[i], 60, true);
+hash_table_insert(regionWhiteLists[i], 65, true);
+hash_table_insert(regionWhiteLists[i], 66, true);
+hash_table_insert(regionWhiteLists[i], 67, true);
+hash_table_insert(regionWhiteLists[i], 68, true);
+hash_table_insert(regionWhiteLists[i], 73, true);
+hash_table_insert(regionWhiteLists[i], 74, true);
+hash_table_insert(regionWhiteLists[i], 75, true);
+hash_table_insert(regionWhiteLists[i], 76, true);
+hash_table_insert(regionWhiteLists[i], 81, true);
+hash_table_insert(regionWhiteLists[i], 82, true);
+hash_table_insert(regionWhiteLists[i], 83, true);
+hash_table_insert(regionWhiteLists[i], 84, true);
+hash_table_insert(regionWhiteLists[i], 89, true);
+hash_table_insert(regionWhiteLists[i], 90, true);
+hash_table_insert(regionWhiteLists[i], 91, true);
+hash_table_insert(regionWhiteLists[i], 92, true);
+hash_table_insert(regionWhiteLists[i], 97, true);
+hash_table_insert(regionWhiteLists[i], 98, true);
+hash_table_insert(regionWhiteLists[i], 99, true);
+hash_table_insert(regionWhiteLists[i], 100, true);
+hash_table_insert(regionWhiteLists[i], 105, true);
+hash_table_insert(regionWhiteLists[i], 106, true);
+hash_table_insert(regionWhiteLists[i], 107, true);
+hash_table_insert(regionWhiteLists[i], 108, true);
+hash_table_insert(regionWhiteLists[i], 113, true);
+hash_table_insert(regionWhiteLists[i], 114, true);
+hash_table_insert(regionWhiteLists[i], 115, true);
+hash_table_insert(regionWhiteLists[i], 116, true);
+hash_table_insert(regionWhiteLists[i], 121, true);
+hash_table_insert(regionWhiteLists[i], 122, true);
+hash_table_insert(regionWhiteLists[i], 123, true);
+hash_table_insert(regionWhiteLists[i], 124, true);
+hash_table_insert(regionWhiteLists[i], 129, true);
+hash_table_insert(regionWhiteLists[i], 130, true);
+hash_table_insert(regionWhiteLists[i], 131, true);
+hash_table_insert(regionWhiteLists[i], 132, true);
+hash_table_insert(regionWhiteLists[i], 137, true);
+hash_table_insert(regionWhiteLists[i], 138, true);
+hash_table_insert(regionWhiteLists[i], 139, true);
+hash_table_insert(regionWhiteLists[i], 140, true);
+hash_table_insert(regionWhiteLists[i], 145, true);
+hash_table_insert(regionWhiteLists[i], 146, true);
+hash_table_insert(regionWhiteLists[i], 147, true);
+hash_table_insert(regionWhiteLists[i], 148, true);
+hash_table_insert(regionWhiteLists[i], 153, true);
+hash_table_insert(regionWhiteLists[i], 154, true);
+hash_table_insert(regionWhiteLists[i], 155, true);
+hash_table_insert(regionWhiteLists[i], 156, true);
+hash_table_insert(regionWhiteLists[i], 161, true);
+hash_table_insert(regionWhiteLists[i], 162, true);
+hash_table_insert(regionWhiteLists[i], 163, true);
+hash_table_insert(regionWhiteLists[i], 164, true);
+hash_table_insert(regionWhiteLists[i], 169, true);
+hash_table_insert(regionWhiteLists[i], 170, true);
+hash_table_insert(regionWhiteLists[i], 171, true);
+hash_table_insert(regionWhiteLists[i], 172, true);
+hash_table_insert(regionWhiteLists[i], 177, true);
+hash_table_insert(regionWhiteLists[i], 178, true);
+hash_table_insert(regionWhiteLists[i], 179, true);
+hash_table_insert(regionWhiteLists[i], 180, true);
+hash_table_insert(regionWhiteLists[i], 185, true);
+hash_table_insert(regionWhiteLists[i], 186, true);
+hash_table_insert(regionWhiteLists[i], 187, true);
+hash_table_insert(regionWhiteLists[i], 188, true);
+hash_table_insert(regionWhiteLists[i], 193, true);
+hash_table_insert(regionWhiteLists[i], 194, true);
+hash_table_insert(regionWhiteLists[i], 195, true);
+hash_table_insert(regionWhiteLists[i], 196, true);
+hash_table_insert(regionWhiteLists[i], 201, true);
+hash_table_insert(regionWhiteLists[i], 202, true);
+hash_table_insert(regionWhiteLists[i], 203, true);
+hash_table_insert(regionWhiteLists[i], 204, true);
+hash_table_insert(regionWhiteLists[i], 209, true);
+hash_table_insert(regionWhiteLists[i], 210, true);
+hash_table_insert(regionWhiteLists[i], 211, true);
+hash_table_insert(regionWhiteLists[i], 212, true);
+hash_table_insert(regionWhiteLists[i], 217, true);
+hash_table_insert(regionWhiteLists[i], 218, true);
+hash_table_insert(regionWhiteLists[i], 219, true);
+hash_table_insert(regionWhiteLists[i], 220, true);
+hash_table_insert(regionWhiteLists[i], 225, true);
+hash_table_insert(regionWhiteLists[i], 226, true);
+hash_table_insert(regionWhiteLists[i], 227, true);
+hash_table_insert(regionWhiteLists[i], 228, true);
+hash_table_insert(regionWhiteLists[i], 233, true);
+hash_table_insert(regionWhiteLists[i], 234, true);
+hash_table_insert(regionWhiteLists[i], 235, true);
+hash_table_insert(regionWhiteLists[i], 236, true);
+hash_table_insert(regionWhiteLists[i], 241, true);
+hash_table_insert(regionWhiteLists[i], 242, true);
+hash_table_insert(regionWhiteLists[i], 243, true);
+hash_table_insert(regionWhiteLists[i], 244, true);
+hash_table_insert(regionWhiteLists[i], 249, true);
+hash_table_insert(regionWhiteLists[i], 250, true);
+hash_table_insert(regionWhiteLists[i], 251, true);
+hash_table_insert(regionWhiteLists[i], 252, true);
+hash_table_insert(regionWhiteLists[i], 257, true);
+hash_table_insert(regionWhiteLists[i], 258, true);
+hash_table_insert(regionWhiteLists[i], 259, true);
+hash_table_insert(regionWhiteLists[i], 260, true);
+hash_table_insert(regionWhiteLists[i], 265, true);
+hash_table_insert(regionWhiteLists[i], 266, true);
+hash_table_insert(regionWhiteLists[i], 267, true);
+hash_table_insert(regionWhiteLists[i], 268, true);
+hash_table_insert(regionWhiteLists[i], 273, true);
+hash_table_insert(regionWhiteLists[i], 274, true);
+hash_table_insert(regionWhiteLists[i], 275, true);
+hash_table_insert(regionWhiteLists[i], 276, true);
+hash_table_insert(regionWhiteLists[i], 281, true);
+hash_table_insert(regionWhiteLists[i], 282, true);
+hash_table_insert(regionWhiteLists[i], 283, true);
+hash_table_insert(regionWhiteLists[i], 284, true);
+hash_table_insert(regionWhiteLists[i], 289, true);
+hash_table_insert(regionWhiteLists[i], 290, true);
+hash_table_insert(regionWhiteLists[i], 291, true);
+hash_table_insert(regionWhiteLists[i], 292, true);
+hash_table_insert(regionWhiteLists[i], 297, true);
+hash_table_insert(regionWhiteLists[i], 298, true);
+hash_table_insert(regionWhiteLists[i], 299, true);
+hash_table_insert(regionWhiteLists[i], 300, true);
+hash_table_insert(regionWhiteLists[i], 305, true);
+hash_table_insert(regionWhiteLists[i], 306, true);
+hash_table_insert(regionWhiteLists[i], 307, true);
+hash_table_insert(regionWhiteLists[i], 308, true);
+hash_table_insert(regionWhiteLists[i], 313, true);
+hash_table_insert(regionWhiteLists[i], 314, true);
+hash_table_insert(regionWhiteLists[i], 315, true);
+hash_table_insert(regionWhiteLists[i], 316, true);
+hash_table_insert(regionWhiteLists[i], 321, true);
+hash_table_insert(regionWhiteLists[i], 322, true);
+hash_table_insert(regionWhiteLists[i], 323, true);
+hash_table_insert(regionWhiteLists[i], 324, true);
+hash_table_insert(regionWhiteLists[i], 329, true);
+hash_table_insert(regionWhiteLists[i], 330, true);
+hash_table_insert(regionWhiteLists[i], 331, true);
+hash_table_insert(regionWhiteLists[i], 332, true);
+hash_table_insert(regionWhiteLists[i], 337, true);
+hash_table_insert(regionWhiteLists[i], 338, true);
+hash_table_insert(regionWhiteLists[i], 339, true);
+hash_table_insert(regionWhiteLists[i], 340, true);
+hash_table_insert(regionWhiteLists[i], 345, true);
+hash_table_insert(regionWhiteLists[i], 346, true);
+hash_table_insert(regionWhiteLists[i], 347, true);
+hash_table_insert(regionWhiteLists[i], 348, true);
+hash_table_insert(regionWhiteLists[i], 353, true);
+hash_table_insert(regionWhiteLists[i], 354, true);
+hash_table_insert(regionWhiteLists[i], 355, true);
+hash_table_insert(regionWhiteLists[i], 356, true);
+hash_table_insert(regionWhiteLists[i], 361, true);
+hash_table_insert(regionWhiteLists[i], 362, true);
+hash_table_insert(regionWhiteLists[i], 363, true);
+hash_table_insert(regionWhiteLists[i], 364, true);
+hash_table_insert(regionWhiteLists[i], 369, true);
+hash_table_insert(regionWhiteLists[i], 370, true);
+hash_table_insert(regionWhiteLists[i], 371, true);
+hash_table_insert(regionWhiteLists[i], 372, true);
+hash_table_insert(regionWhiteLists[i], 377, true);
+hash_table_insert(regionWhiteLists[i], 378, true);
+hash_table_insert(regionWhiteLists[i], 379, true);
+hash_table_insert(regionWhiteLists[i], 380, true);
+hash_table_insert(regionWhiteLists[i], 385, true);
+hash_table_insert(regionWhiteLists[i], 386, true);
+hash_table_insert(regionWhiteLists[i], 387, true);
+hash_table_insert(regionWhiteLists[i], 388, true);
+hash_table_insert(regionWhiteLists[i], 393, true);
+hash_table_insert(regionWhiteLists[i], 394, true);
+hash_table_insert(regionWhiteLists[i], 395, true);
+hash_table_insert(regionWhiteLists[i], 396, true);
