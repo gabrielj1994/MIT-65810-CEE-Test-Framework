@@ -1,0 +1,434 @@
+
+Arg count: 4
+
+Comparing memory content from:
+/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/14980/output5649bae0c000
+/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/16240/output55c10ec2b000
+LOGGING: str[0] to 1001 offset
+
+Byte difference
+location: 264
+byte 1: 65
+byte 2: 25
+
+Byte difference
+location: 265
+byte 1: 03
+byte 2: 04
+
+Byte difference
+location: 272
+byte 1: 65
+byte 2: 25
+
+Byte difference
+location: 273
+byte 1: 03
+byte 2: 04
+
+Byte difference
+location: 320
+byte 1: f0
+byte 2: 00
+
+Byte difference
+location: 321
+byte 1: 01
+byte 2: 02
+
+Byte difference
+location: 328
+byte 1: f0
+byte 2: 00
+
+Byte difference
+location: 329
+byte 1: 01
+byte 2: 02
+
+Byte difference
+location: 872
+byte 1: f9
+byte 2: 91
+
+Byte difference
+location: 873
+byte 1: c6
+byte 2: 7d
+
+Byte difference
+location: 874
+byte 1: 46
+byte 2: 23
+
+Byte difference
+location: 875
+byte 1: 46
+byte 2: d0
+
+Byte difference
+location: 876
+byte 1: 20
+byte 2: f1
+
+Byte difference
+location: 877
+byte 1: 66
+byte 2: cc
+
+Byte difference
+location: 878
+byte 1: 43
+byte 2: de
+
+Byte difference
+location: 879
+byte 1: e6
+byte 2: cf
+
+Byte difference
+location: 880
+byte 1: 37
+byte 2: 19
+
+Byte difference
+location: 881
+byte 1: 21
+byte 2: 00
+
+Byte difference
+location: 882
+byte 1: 74
+byte 2: 00
+
+Byte difference
+location: 883
+byte 1: 0e
+byte 2: 00
+
+Byte difference
+location: 884
+byte 1: de
+byte 2: 00
+
+Byte difference
+location: 885
+byte 1: 4a
+byte 2: 00
+
+Byte difference
+location: 886
+byte 1: 7a
+byte 2: 00
+
+Byte difference
+location: 887
+byte 1: 08
+byte 2: 00
+
+Byte difference
+location: 888
+byte 1: af
+byte 2: 00
+
+Byte difference
+location: 889
+byte 1: d5
+byte 2: 00
+
+Byte difference
+location: 890
+byte 1: 2a
+byte 2: 00
+
+Byte difference
+location: 891
+byte 1: 7b
+byte 2: 00
+
+Byte difference
+location: 892
+byte 1: 04
+byte 2: 00
+
+Byte difference
+location: 896
+byte 1: 10
+byte 2: 00
+
+Byte difference
+location: 900
+byte 1: 01
+byte 2: 00
+
+Byte difference
+location: 904
+byte 1: 47
+byte 2: 5f
+
+Byte difference
+location: 905
+byte 1: 4e
+byte 2: 9a
+
+Byte difference
+location: 906
+byte 1: 55
+byte 2: 7f
+
+Byte difference
+location: 907
+byte 1: 00
+byte 2: 67
+
+Byte difference
+location: 912
+byte 1: 03
+byte 2: f8
+
+Byte difference
+location: 913
+byte 1: 00
+byte 2: b4
+
+Byte difference
+location: 914
+byte 1: 00
+byte 2: 92
+
+Byte difference
+location: 915
+byte 1: 00
+byte 2: 82
+
+Byte difference
+location: 916
+byte 1: 02
+byte 2: 6e
+
+Byte difference
+location: 917
+byte 1: 00
+byte 2: 7f
+
+Byte difference
+location: 920
+byte 1: 00
+byte 2: 98
+
+Byte difference
+location: 921
+byte 1: 00
+byte 2: e5
+
+Byte difference
+location: 922
+byte 1: 00
+byte 2: bd
+
+Byte difference
+location: 923
+byte 1: 00
+byte 2: 56
+
+Byte difference
+location: 924
+byte 1: 00
+byte 2: ff
+
+Byte difference
+location: 925
+byte 1: 00
+byte 2: 7f
+
+Byte difference
+location: 928
+byte 1: 02
+byte 2: c1
+
+Byte difference
+location: 929
+byte 1: 00
+byte 2: c9
+
+Byte difference
+location: 930
+byte 1: 00
+byte 2: 8f
+
+Byte difference
+location: 931
+byte 1: 00
+byte 2: 82
+
+Byte difference
+location: 932
+byte 1: 09
+byte 2: 6e
+
+Byte difference
+location: 933
+byte 1: 00
+byte 2: 7f
+
+Byte difference
+location: 936
+byte 1: 01
+byte 2: 70
+
+Byte difference
+location: 937
+byte 1: 00
+byte 2: e4
+
+Byte difference
+location: 938
+byte 1: 00
+byte 2: bd
+
+Byte difference
+location: 939
+byte 1: 00
+byte 2: 56
+
+Byte difference
+location: 940
+byte 1: 06
+byte 2: ff
+
+Byte difference
+location: 941
+byte 1: 00
+byte 2: 7f
+
+Byte difference
+location: 944
+byte 1: 00
+byte 2: 80
+
+Byte difference
+location: 945
+byte 1: 00
+byte 2: e4
+
+Byte difference
+location: 946
+byte 1: 81
+byte 2: bd
+
+Byte difference
+location: 947
+byte 1: 00
+byte 2: 56
+
+Byte difference
+location: 948
+byte 1: 00
+byte 2: ff
+
+Byte difference
+location: 949
+byte 1: 00
+byte 2: 7f
+
+Byte difference
+location: 952
+byte 1: 09
+byte 2: e9
+
+Byte difference
+location: 953
+byte 1: 00
+byte 2: 81
+
+Byte difference
+location: 954
+byte 1: 00
+byte 2: 90
+
+Byte difference
+location: 955
+byte 1: 00
+byte 2: 82
+
+Byte difference
+location: 956
+byte 1: 00
+byte 2: 6e
+
+Byte difference
+location: 957
+byte 1: 00
+byte 2: 7f
+
+Byte difference
+location: 960
+byte 1: d1
+byte 2: 01
+
+Byte difference
+location: 961
+byte 1: 65
+byte 2: 00
+
+Byte difference
+location: 962
+byte 1: ce
+byte 2: 00
+
+Byte difference
+location: 963
+byte 1: 6d
+byte 2: 00
+
+Byte difference
+location: 968
+byte 1: 00
+byte 2: e8
+
+Byte difference
+location: 969
+byte 1: 00
+byte 2: 19
+
+Byte difference
+location: 970
+byte 1: 00
+byte 2: 8f
+
+Byte difference
+location: 971
+byte 1: 00
+byte 2: 82
+
+Byte difference
+location: 972
+byte 1: 00
+byte 2: 6e
+
+Byte difference
+location: 973
+byte 1: 00
+byte 2: 7f
+
+Byte difference
+location: 976
+byte 1: 00
+byte 2: 09
+
+Byte difference
+location: 992
+byte 1: 6e
+byte 2: 01
+
+Byte difference
+location: 996
+byte 1: 20
+byte 2: 00
+
+Byte difference
+location: 1000
+byte 1: 00
+byte 2: e8
+
+Total differences: 85

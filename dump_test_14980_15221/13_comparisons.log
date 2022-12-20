@@ -1,0 +1,189 @@
+
+Arg count: 4
+
+Comparing memory content from:
+/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/14980/output7fe02dc30000
+/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/15221/output7f88b432a000
+LOGGING: str[0] to 1001 offset
+
+Byte difference
+location: 25
+byte 1: 57
+byte 2: f7
+
+Byte difference
+location: 26
+byte 1: b6
+byte 2: 25
+
+Byte difference
+location: 27
+byte 1: 2d
+byte 2: b4
+
+Byte difference
+location: 28
+byte 1: e0
+byte 2: 88
+
+Byte difference
+location: 33
+byte 1: f1
+byte 2: 91
+
+Byte difference
+location: 34
+byte 1: a9
+byte 2: 19
+
+Byte difference
+location: 35
+byte 1: 2d
+byte 2: b4
+
+Byte difference
+location: 36
+byte 1: e0
+byte 2: 88
+
+Byte difference
+location: 41
+byte 1: 57
+byte 2: f7
+
+Byte difference
+location: 42
+byte 1: b6
+byte 2: 25
+
+Byte difference
+location: 43
+byte 1: 2d
+byte 2: b4
+
+Byte difference
+location: 44
+byte 1: e0
+byte 2: 88
+
+Byte difference
+location: 49
+byte 1: 0b
+byte 2: ab
+
+Byte difference
+location: 50
+byte 1: aa
+byte 2: 19
+
+Byte difference
+location: 51
+byte 1: 2d
+byte 2: b4
+
+Byte difference
+location: 52
+byte 1: e0
+byte 2: 88
+
+Byte difference
+location: 57
+byte 1: fe
+byte 2: 9e
+
+Byte difference
+location: 58
+byte 1: a9
+byte 2: 19
+
+Byte difference
+location: 59
+byte 1: 2d
+byte 2: b4
+
+Byte difference
+location: 60
+byte 1: e0
+byte 2: 88
+
+Byte difference
+location: 65
+byte 1: 57
+byte 2: f7
+
+Byte difference
+location: 66
+byte 1: b6
+byte 2: 25
+
+Byte difference
+location: 67
+byte 1: 2d
+byte 2: b4
+
+Byte difference
+location: 68
+byte 1: e0
+byte 2: 88
+
+Byte difference
+location: 73
+byte 1: 58
+byte 2: f8
+
+Byte difference
+location: 74
+byte 1: b6
+byte 2: 25
+
+Byte difference
+location: 75
+byte 1: 2d
+byte 2: b4
+
+Byte difference
+location: 76
+byte 1: e0
+byte 2: 88
+
+Byte difference
+location: 97
+byte 1: 11
+byte 2: b1
+
+Byte difference
+location: 98
+byte 1: c3
+byte 2: 32
+
+Byte difference
+location: 99
+byte 1: 2d
+byte 2: b4
+
+Byte difference
+location: 100
+byte 1: e0
+byte 2: 88
+
+Byte difference
+location: 113
+byte 1: 14
+byte 2: b4
+
+Byte difference
+location: 114
+byte 1: c3
+byte 2: 32
+
+Byte difference
+location: 115
+byte 1: 2d
+byte 2: b4
+
+Byte difference
+location: 116
+byte 1: e0
+byte 2: 88
+
+Total differences: 36

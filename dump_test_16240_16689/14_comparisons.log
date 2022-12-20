@@ -1,0 +1,1119 @@
+
+Arg count: 4
+
+Comparing memory content from:
+/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/16240/output7fe71a8e9000
+/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/16689/output7efcefa5b000
+LOGGING: str[0] to 1001 offset
+
+Byte difference
+location: 1
+byte 1: a9
+byte 2: c9
+
+Byte difference
+location: 2
+byte 1: 8b
+byte 2: a2
+
+Byte difference
+location: 3
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 4
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 5
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 32
+byte 1: 8c
+byte 2: b4
+
+Byte difference
+location: 33
+byte 1: 31
+byte 2: 23
+
+Byte difference
+location: 81
+byte 1: b3
+byte 2: 73
+
+Byte difference
+location: 82
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 83
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 84
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 85
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 89
+byte 1: 90
+byte 2: b0
+
+Byte difference
+location: 90
+byte 1: 8e
+byte 2: a5
+
+Byte difference
+location: 91
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 92
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 93
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 209
+byte 1: 10
+byte 2: 30
+
+Byte difference
+location: 210
+byte 1: 8b
+byte 2: a2
+
+Byte difference
+location: 211
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 212
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 213
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 233
+byte 1: 0e
+byte 2: 2e
+
+Byte difference
+location: 234
+byte 1: 8b
+byte 2: a2
+
+Byte difference
+location: 235
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 236
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 237
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 241
+byte 1: 10
+byte 2: 30
+
+Byte difference
+location: 242
+byte 1: 8b
+byte 2: a2
+
+Byte difference
+location: 243
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 244
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 245
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 249
+byte 1: 0f
+byte 2: 2f
+
+Byte difference
+location: 250
+byte 1: 8b
+byte 2: a2
+
+Byte difference
+location: 251
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 252
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 253
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 273
+byte 1: a0
+byte 2: f0
+
+Byte difference
+location: 274
+byte 1: 3e
+byte 2: ce
+
+Byte difference
+location: 275
+byte 1: 10
+byte 2: c1
+
+Byte difference
+location: 276
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 277
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 312
+byte 1: d8
+byte 2: e8
+
+Byte difference
+location: 313
+byte 1: f8
+byte 2: 6e
+
+Byte difference
+location: 314
+byte 1: c7
+byte 2: d2
+
+Byte difference
+location: 315
+byte 1: 53
+byte 2: 30
+
+Byte difference
+location: 316
+byte 1: fd
+byte 2: fc
+
+Byte difference
+location: 361
+byte 1: 91
+byte 2: b1
+
+Byte difference
+location: 362
+byte 1: 8e
+byte 2: a5
+
+Byte difference
+location: 363
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 364
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 365
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 369
+byte 1: c1
+byte 2: e1
+
+Byte difference
+location: 370
+byte 1: 8c
+byte 2: a3
+
+Byte difference
+location: 371
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 372
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 373
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 385
+byte 1: a0
+byte 2: c0
+
+Byte difference
+location: 386
+byte 1: 8b
+byte 2: a2
+
+Byte difference
+location: 387
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 388
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 389
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 401
+byte 1: b0
+byte 2: 70
+
+Byte difference
+location: 402
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 403
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 404
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 405
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 409
+byte 1: 97
+byte 2: b7
+
+Byte difference
+location: 410
+byte 1: 8e
+byte 2: a5
+
+Byte difference
+location: 411
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 412
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 413
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 417
+byte 1: ed
+byte 2: ad
+
+Byte difference
+location: 418
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 419
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 420
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 421
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 425
+byte 1: 97
+byte 2: b7
+
+Byte difference
+location: 426
+byte 1: 8e
+byte 2: a5
+
+Byte difference
+location: 427
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 428
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 429
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 441
+byte 1: 91
+byte 2: b1
+
+Byte difference
+location: 442
+byte 1: 8e
+byte 2: a5
+
+Byte difference
+location: 443
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 444
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 445
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 457
+byte 1: 97
+byte 2: b7
+
+Byte difference
+location: 458
+byte 1: 8e
+byte 2: a5
+
+Byte difference
+location: 459
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 460
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 461
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 473
+byte 1: ed
+byte 2: ad
+
+Byte difference
+location: 474
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 475
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 476
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 477
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 481
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 482
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 483
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 484
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 485
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 489
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 490
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 491
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 492
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 493
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 505
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 506
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 507
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 508
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 509
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 513
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 514
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 515
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 516
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 517
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 521
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 522
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 523
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 524
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 525
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 529
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 530
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 531
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 532
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 533
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 537
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 538
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 539
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 540
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 541
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 545
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 546
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 547
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 548
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 549
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 553
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 554
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 555
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 556
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 557
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 561
+byte 1: ed
+byte 2: ad
+
+Byte difference
+location: 562
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 563
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 564
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 565
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 569
+byte 1: ed
+byte 2: ad
+
+Byte difference
+location: 570
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 571
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 572
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 573
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 625
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 626
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 627
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 628
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 629
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 633
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 634
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 635
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 636
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 637
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 649
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 650
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 651
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 652
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 653
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 657
+byte 1: ef
+byte 2: af
+
+Byte difference
+location: 658
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 659
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 660
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 661
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 665
+byte 1: ed
+byte 2: ad
+
+Byte difference
+location: 666
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 667
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 668
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 669
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 673
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 674
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 675
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 676
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 677
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 681
+byte 1: ed
+byte 2: ad
+
+Byte difference
+location: 682
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 683
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 684
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 685
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 689
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 690
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 691
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 692
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 693
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 705
+byte 1: ee
+byte 2: ae
+
+Byte difference
+location: 706
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 707
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 708
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 709
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 745
+byte 1: ef
+byte 2: af
+
+Byte difference
+location: 746
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 747
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 748
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 749
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 753
+byte 1: ef
+byte 2: af
+
+Byte difference
+location: 754
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 755
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 756
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 757
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 777
+byte 1: ef
+byte 2: af
+
+Byte difference
+location: 778
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 779
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 780
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 781
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 793
+byte 1: ef
+byte 2: af
+
+Byte difference
+location: 794
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 795
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 796
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 797
+byte 1: 55
+byte 2: 56
+
+Byte difference
+location: 865
+byte 1: ef
+byte 2: af
+
+Byte difference
+location: 866
+byte 1: c2
+byte 2: b0
+
+Byte difference
+location: 867
+byte 1: 0e
+byte 2: c1
+
+Byte difference
+location: 868
+byte 1: c1
+byte 2: 52
+
+Byte difference
+location: 869
+byte 1: 55
+byte 2: 56
+
+Total differences: 222

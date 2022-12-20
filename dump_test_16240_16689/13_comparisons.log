@@ -1,0 +1,234 @@
+
+Arg count: 4
+
+Comparing memory content from:
+/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/16240/output7fe71a8e8000
+/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/16689/output7efcefa5a000
+LOGGING: str[0] to 1001 offset
+
+Byte difference
+location: 25
+byte 1: d7
+byte 2: f7
+
+Byte difference
+location: 26
+byte 1: 81
+byte 2: 98
+
+Byte difference
+location: 27
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 28
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 29
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 33
+byte 1: 71
+byte 2: 91
+
+Byte difference
+location: 34
+byte 1: 75
+byte 2: 8c
+
+Byte difference
+location: 35
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 36
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 37
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 41
+byte 1: d7
+byte 2: f7
+
+Byte difference
+location: 42
+byte 1: 81
+byte 2: 98
+
+Byte difference
+location: 43
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 44
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 45
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 49
+byte 1: 8b
+byte 2: ab
+
+Byte difference
+location: 50
+byte 1: 75
+byte 2: 8c
+
+Byte difference
+location: 51
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 52
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 53
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 57
+byte 1: 7e
+byte 2: 9e
+
+Byte difference
+location: 58
+byte 1: 75
+byte 2: 8c
+
+Byte difference
+location: 59
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 60
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 61
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 65
+byte 1: d7
+byte 2: f7
+
+Byte difference
+location: 66
+byte 1: 81
+byte 2: 98
+
+Byte difference
+location: 67
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 68
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 69
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 73
+byte 1: d8
+byte 2: f8
+
+Byte difference
+location: 74
+byte 1: 81
+byte 2: 98
+
+Byte difference
+location: 75
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 76
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 77
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 97
+byte 1: 91
+byte 2: b1
+
+Byte difference
+location: 98
+byte 1: 8e
+byte 2: a5
+
+Byte difference
+location: 99
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 100
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 101
+byte 1: 7f
+byte 2: 7e
+
+Byte difference
+location: 113
+byte 1: 94
+byte 2: b4
+
+Byte difference
+location: 114
+byte 1: 8e
+byte 2: a5
+
+Byte difference
+location: 115
+byte 1: 1a
+byte 2: ef
+
+Byte difference
+location: 116
+byte 1: e7
+byte 2: fc
+
+Byte difference
+location: 117
+byte 1: 7f
+byte 2: 7e
+
+Total differences: 45

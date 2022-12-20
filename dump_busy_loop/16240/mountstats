@@ -1,0 +1,102 @@
+device sysfs mounted on /sys with fstype sysfs
+device proc mounted on /proc with fstype proc
+device udev mounted on /dev with fstype devtmpfs
+device devpts mounted on /dev/pts with fstype devpts
+device tmpfs mounted on /run with fstype tmpfs
+device /dev/sda1 mounted on / with fstype ext3
+device securityfs mounted on /sys/kernel/security with fstype securityfs
+device tmpfs mounted on /dev/shm with fstype tmpfs
+device tmpfs mounted on /run/lock with fstype tmpfs
+device tmpfs mounted on /sys/fs/cgroup with fstype tmpfs
+device cgroup2 mounted on /sys/fs/cgroup/unified with fstype cgroup2
+device cgroup mounted on /sys/fs/cgroup/systemd with fstype cgroup
+device pstore mounted on /sys/fs/pstore with fstype pstore
+device none mounted on /sys/fs/bpf with fstype bpf
+device cgroup mounted on /sys/fs/cgroup/perf_event with fstype cgroup
+device cgroup mounted on /sys/fs/cgroup/memory with fstype cgroup
+device cgroup mounted on /sys/fs/cgroup/blkio with fstype cgroup
+device cgroup mounted on /sys/fs/cgroup/net_cls,net_prio with fstype cgroup
+device cgroup mounted on /sys/fs/cgroup/pids with fstype cgroup
+device cgroup mounted on /sys/fs/cgroup/devices with fstype cgroup
+device cgroup mounted on /sys/fs/cgroup/cpu,cpuacct with fstype cgroup
+device cgroup mounted on /sys/fs/cgroup/hugetlb with fstype cgroup
+device cgroup mounted on /sys/fs/cgroup/cpuset with fstype cgroup
+device cgroup mounted on /sys/fs/cgroup/freezer with fstype cgroup
+device cgroup mounted on /sys/fs/cgroup/rdma with fstype cgroup
+device systemd-1 mounted on /proc/sys/fs/binfmt_misc with fstype autofs
+device hugetlbfs mounted on /dev/hugepages with fstype hugetlbfs
+device mqueue mounted on /dev/mqueue with fstype mqueue
+device debugfs mounted on /sys/kernel/debug with fstype debugfs
+device sunrpc mounted on /run/rpc_pipefs with fstype rpc_pipefs
+device tracefs mounted on /sys/kernel/tracing with fstype tracefs
+device fusectl mounted on /sys/fs/fuse/connections with fstype fusectl
+device configfs mounted on /sys/kernel/config with fstype configfs
+device binfmt_misc mounted on /proc/sys/fs/binfmt_misc with fstype binfmt_misc
+device tracefs mounted on /sys/kernel/debug/tracing with fstype tracefs
+device ops.wisc.cloudlab.us:/proj/mit6828-PG0 mounted on /proj/mit6828-PG0 with fstype nfs statvers=1.1
+	opts:	rw,vers=3,rsize=131072,wsize=131072,namlen=255,acregmin=3,acregmax=60,acdirmin=30,acdirmax=60,hard,nolock,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=128.104.222.8,mountvers=3,mountport=900,mountproto=tcp,local_lock=all
+	age:	65632
+	caps:	caps=0x3fc7,wtmult=512,dtsize=32768,bsize=0,namlen=255
+	sec:	flavor=1,pseudoflavor=1
+	events:	3 21 0 0 3 7 29 0 0 3 0 0 0 0 3 0 0 3 0 0 0 0 0 0 0 0 0 
+	bytes:	234 0 0 0 234 0 3 0 
+	RPC iostats version: 1.1  p/v: 100003/3 (nfs)
+	xprt:	tcp 767 1 2 0 0 29 29 0 29 0 2 0 0
+	per-op statistics
+	        NULL: 1 1 0 44 24 1 0 1 0
+	     GETATTR: 3 3 0 444 336 0 1 1 0
+	     SETATTR: 0 0 0 0 0 0 0 0 0
+	      LOOKUP: 7 7 0 1132 1532 0 3 3 1
+	      ACCESS: 7 7 0 1064 840 0 2 3 0
+	    READLINK: 0 0 0 0 0 0 0 0 0
+	        READ: 3 3 0 480 624 0 1 1 0
+	       WRITE: 0 0 0 0 0 0 0 0 0
+	      CREATE: 0 0 0 0 0 0 0 0 0
+	       MKDIR: 0 0 0 0 0 0 0 0 0
+	     SYMLINK: 0 0 0 0 0 0 0 0 0
+	       MKNOD: 0 0 0 0 0 0 0 0 0
+	      REMOVE: 0 0 0 0 0 0 0 0 0
+	       RMDIR: 0 0 0 0 0 0 0 0 0
+	      RENAME: 0 0 0 0 0 0 0 0 0
+	        LINK: 0 0 0 0 0 0 0 0 0
+	     READDIR: 0 0 0 0 0 0 0 0 0
+	 READDIRPLUS: 0 0 0 0 0 0 0 0 0
+	      FSSTAT: 0 0 0 0 0 0 0 0 0
+	      FSINFO: 2 2 0 296 328 0 0 0 0
+	    PATHCONF: 1 1 0 148 140 0 0 0 0
+	      COMMIT: 0 0 0 0 0 0 0 0 0
+
+device ops.wisc.cloudlab.us:/share mounted on /share with fstype nfs statvers=1.1
+	opts:	rw,vers=3,rsize=131072,wsize=131072,namlen=255,acregmin=3,acregmax=60,acdirmin=30,acdirmax=60,hard,nolock,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=128.104.222.8,mountvers=3,mountport=900,mountproto=tcp,local_lock=all
+	age:	65632
+	caps:	caps=0x3fc7,wtmult=512,dtsize=32768,bsize=0,namlen=255
+	sec:	flavor=1,pseudoflavor=1
+	events:	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+	bytes:	0 0 0 0 0 0 0 0 
+	RPC iostats version: 1.1  p/v: 100003/3 (nfs)
+	xprt:	tcp 767 1 2 0 0 29 29 0 29 0 2 0 0
+	per-op statistics
+	        NULL: 1 1 0 44 24 1 0 1 0
+	     GETATTR: 0 0 0 0 0 0 0 0 0
+	     SETATTR: 0 0 0 0 0 0 0 0 0
+	      LOOKUP: 0 0 0 0 0 0 0 0 0
+	      ACCESS: 0 0 0 0 0 0 0 0 0
+	    READLINK: 0 0 0 0 0 0 0 0 0
+	        READ: 0 0 0 0 0 0 0 0 0
+	       WRITE: 0 0 0 0 0 0 0 0 0
+	      CREATE: 0 0 0 0 0 0 0 0 0
+	       MKDIR: 0 0 0 0 0 0 0 0 0
+	     SYMLINK: 0 0 0 0 0 0 0 0 0
+	       MKNOD: 0 0 0 0 0 0 0 0 0
+	      REMOVE: 0 0 0 0 0 0 0 0 0
+	       RMDIR: 0 0 0 0 0 0 0 0 0
+	      RENAME: 0 0 0 0 0 0 0 0 0
+	        LINK: 0 0 0 0 0 0 0 0 0
+	     READDIR: 0 0 0 0 0 0 0 0 0
+	 READDIRPLUS: 0 0 0 0 0 0 0 0 0
+	      FSSTAT: 0 0 0 0 0 0 0 0 0
+	      FSINFO: 2 2 0 296 328 0 0 0 0
+	    PATHCONF: 1 1 0 148 140 0 0 0 0
+	      COMMIT: 0 0 0 0 0 0 0 0 0
+
+device tmpfs mounted on /run/user/20001 with fstype tmpfs

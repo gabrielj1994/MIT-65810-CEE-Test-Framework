@@ -1,0 +1,21 @@
+5649bae0c000 default file=/opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop mapped=1 N0=1 kernelpagesize_kB=4
+5649bae0d000 default file=/opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop mapped=1 N0=1 kernelpagesize_kB=4
+5649bae0e000 default file=/opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop mapped=1 N0=1 kernelpagesize_kB=4
+5649bae0f000 default file=/opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop anon=1 dirty=1 N0=1 kernelpagesize_kB=4
+5649bae10000 default file=/opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop anon=1 dirty=1 N0=1 kernelpagesize_kB=4
+5649bc38c000 default heap anon=1 dirty=1 N0=1 kernelpagesize_kB=4
+7fe02da05000 default file=/usr/lib/x86_64-linux-gnu/libc-2.31.so mapped=34 mapmax=42 N0=34 kernelpagesize_kB=4
+7fe02da27000 default file=/usr/lib/x86_64-linux-gnu/libc-2.31.so mapped=291 mapmax=45 N0=291 kernelpagesize_kB=4
+7fe02db9f000 default file=/usr/lib/x86_64-linux-gnu/libc-2.31.so mapped=47 mapmax=44 N0=47 kernelpagesize_kB=4
+7fe02dbed000 default file=/usr/lib/x86_64-linux-gnu/libc-2.31.so anon=4 dirty=4 N0=4 kernelpagesize_kB=4
+7fe02dbf1000 default file=/usr/lib/x86_64-linux-gnu/libc-2.31.so anon=2 dirty=2 N0=2 kernelpagesize_kB=4
+7fe02dbf3000 default anon=5 dirty=5 N0=5 kernelpagesize_kB=4
+7fe02dc02000 default file=/usr/lib/x86_64-linux-gnu/ld-2.31.so mapped=1 mapmax=34 N0=1 kernelpagesize_kB=4
+7fe02dc03000 default file=/usr/lib/x86_64-linux-gnu/ld-2.31.so mapped=35 mapmax=43 N0=35 kernelpagesize_kB=4
+7fe02dc26000 default file=/usr/lib/x86_64-linux-gnu/ld-2.31.so mapped=8 mapmax=36 N0=8 kernelpagesize_kB=4
+7fe02dc2f000 default file=/usr/lib/x86_64-linux-gnu/ld-2.31.so anon=1 dirty=1 N0=1 kernelpagesize_kB=4
+7fe02dc30000 default file=/usr/lib/x86_64-linux-gnu/ld-2.31.so anon=1 dirty=1 N0=1 kernelpagesize_kB=4
+7fe02dc31000 default anon=1 dirty=1 N0=1 kernelpagesize_kB=4
+7ffefa866000 default stack anon=3 dirty=3 N0=3 kernelpagesize_kB=4
+7ffefa9b4000 default
+7ffefa9b7000 default

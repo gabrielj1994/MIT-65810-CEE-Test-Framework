@@ -1,0 +1,30 @@
+busy_loop (6156, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :      17486366.120343
+se.vruntime                                  :       1038185.085243
+se.sum_exec_runtime                          :         25632.327924
+se.nr_migrations                             :                    1
+nr_switches                                  :                   59
+nr_voluntary_switches                        :                   21
+nr_involuntary_switches                      :                   38
+se.load.weight                               :              1048576
+se.runnable_weight                           :              1048576
+se.avg.load_sum                              :                46975
+se.avg.runnable_load_sum                     :                46975
+se.avg.util_sum                              :             48107741
+se.avg.load_avg                              :                 1023
+se.avg.runnable_load_avg                     :                 1023
+se.avg.util_avg                              :                 1024
+se.avg.last_update_time                      :       17486366119936
+se.avg.util_est.ewma                         :                 1016
+se.avg.util_est.enqueued                     :                 1024
+policy                                       :                    0
+prio                                         :                  120
+clock-delta                                  :                   72
+mm->numa_scan_seq                            :                   24
+numa_pages_migrated                          :                    0
+numa_preferred_nid                           :                   -1
+total_numa_faults                            :                    0
+current_node=0, numa_group_id=0
+numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
+numa_faults node=1 task_private=0 task_shared=0 group_private=0 group_shared=0

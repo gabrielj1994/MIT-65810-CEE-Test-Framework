@@ -1,0 +1,22 @@
+562a63fe9000-562a63fea000 r--p 00000000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+562a63fea000-562a63feb000 r-xp 00001000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+562a63feb000-562a63fec000 r--p 00002000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+562a63fec000-562a63fed000 r--p 00002000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+562a63fed000-562a63fee000 rw-p 00003000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+562a65322000-562a65343000 rw-p 00000000 00:00 0                          [heap]
+7f581eb11000-7f581eb33000 r--p 00000000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f581eb33000-7f581ecab000 r-xp 00022000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f581ecab000-7f581ecf9000 r--p 0019a000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f581ecf9000-7f581ecfd000 r--p 001e7000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f581ecfd000-7f581ecff000 rw-p 001eb000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f581ecff000-7f581ed05000 rw-p 00000000 00:00 0 
+7f581ed0e000-7f581ed0f000 r--p 00000000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f581ed0f000-7f581ed32000 r-xp 00001000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f581ed32000-7f581ed3a000 r--p 00024000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f581ed3b000-7f581ed3c000 r--p 0002c000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f581ed3c000-7f581ed3d000 rw-p 0002d000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f581ed3d000-7f581ed3e000 rw-p 00000000 00:00 0 
+7ffcdff0e000-7ffcdff2f000 rw-p 00000000 00:00 0                          [stack]
+7ffcdffe0000-7ffcdffe3000 r--p 00000000 00:00 0                          [vvar]
+7ffcdffe3000-7ffcdffe4000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]

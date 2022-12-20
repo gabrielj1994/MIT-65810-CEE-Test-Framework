@@ -1,0 +1,14 @@
+
+Arg count: 4
+
+Comparing memory content from:
+/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/16240/output55c1103ea000
+/opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/16689/output5652c1cef000
+LOGGING: str[0] to 1001 offset
+
+Byte difference
+location: 735
+byte 1: 33
+byte 2: 32
+
+Total differences: 1
