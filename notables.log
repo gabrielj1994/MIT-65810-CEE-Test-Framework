@@ -1,3 +1,24 @@
+
+====
+history
+
+85  sudo bash ./copy_proc.sh 8424
+   86  sudo bash ./pid_memory_dump.sh 8424
+   87  ls -lrta ./dump_busy_loop/8424/
+   88  strings ./dump_busy_loop/8424/output55fca01b3000 
+   89  strings ./dump_busy_loop/8424/output55fca01b4000
+   90  strings ./dump_busy_loop/8424/output55fca01b5000
+   91  strings ./dump_busy_loop/8424/output55fca01b6000
+   92  strings ./dump_busy_loop/8424/output55fca01b7000
+====
+chksums
+
+gabrielj@node-0:/opt/GIT/MIT-65810-CEE-Test-Framework$ sudo md5sum /opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000
+dbd1ce079b70f3184ef1485a610e55f3  /opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000
+gabrielj@node-0:/opt/GIT/MIT-65810-CEE-Test-Framework$ sudo md5sum /opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000_2
+dbd1ce079b70f3184ef1485a610e55f3  /opt/GIT/MIT-65810-CEE-Test-Framework/dump_busy_loop/8424/output55fca01b6000_2
+
+
 ====
 
 gabrielj@node-0:/opt/GIT/MIT-65810-CEE-Test-Framework$ strings ./dump_busy_loop/6156/output557030435000 
@@ -36,6 +57,62 @@ gabrielj@node-0:/opt/GIT/MIT-65810-CEE-Test-Framework$ strings ./dump_busy_loop/
 C0pU
 
 ====
+
+maps 6156
+
+/opt/GIT/MIT-65810-CEE-Test-Framework$ cat ./dump_busy_loop/6156/maps
+557030435000-557030436000 r--p 00000000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+557030436000-557030437000 r-xp 00001000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+557030437000-557030438000 r--p 00002000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+557030438000-557030439000 r--p 00002000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+557030439000-55703043a000 rw-p 00003000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+5570306e1000-557030702000 rw-p 00000000 00:00 0                          [heap]
+7ff48adc3000-7ff48ade5000 r--p 00000000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7ff48ade5000-7ff48af5d000 r-xp 00022000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7ff48af5d000-7ff48afab000 r--p 0019a000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7ff48afab000-7ff48afaf000 r--p 001e7000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7ff48afaf000-7ff48afb1000 rw-p 001eb000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7ff48afb1000-7ff48afb7000 rw-p 00000000 00:00 0 
+7ff48afc0000-7ff48afc1000 r--p 00000000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7ff48afc1000-7ff48afe4000 r-xp 00001000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7ff48afe4000-7ff48afec000 r--p 00024000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7ff48afed000-7ff48afee000 r--p 0002c000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7ff48afee000-7ff48afef000 rw-p 0002d000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7ff48afef000-7ff48aff0000 rw-p 00000000 00:00 0 
+7ffe34451000-7ffe34472000 rw-p 00000000 00:00 0                          [stack]
+7ffe3451e000-7ffe34521000 r--p 00000000 00:00 0                          [vvar]
+7ffe34521000-7ffe34522000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+====
+maps 7171
+
+/opt/GIT/MIT-65810-CEE-Test-Framework$ cat ./dump_busy_loop/7171/maps
+55bb78068000-55bb78069000 r--p 00000000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+55bb78069000-55bb7806a000 r-xp 00001000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+55bb7806a000-55bb7806b000 r--p 00002000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+55bb7806b000-55bb7806c000 r--p 00002000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+55bb7806c000-55bb7806d000 rw-p 00003000 08:01 655899                     /opt/GIT/MIT-65810-CEE-Test-Framework/busy_loop
+55bb79bb0000-55bb79bd1000 rw-p 00000000 00:00 0                          [heap]
+7f9fe75e0000-7f9fe7602000 r--p 00000000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f9fe7602000-7f9fe777a000 r-xp 00022000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f9fe777a000-7f9fe77c8000 r--p 0019a000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f9fe77c8000-7f9fe77cc000 r--p 001e7000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f9fe77cc000-7f9fe77ce000 rw-p 001eb000 08:01 39718                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f9fe77ce000-7f9fe77d4000 rw-p 00000000 00:00 0 
+7f9fe77dd000-7f9fe77de000 r--p 00000000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f9fe77de000-7f9fe7801000 r-xp 00001000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f9fe7801000-7f9fe7809000 r--p 00024000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f9fe780a000-7f9fe780b000 r--p 0002c000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f9fe780b000-7f9fe780c000 rw-p 0002d000 08:01 39702                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f9fe780c000-7f9fe780d000 rw-p 00000000 00:00 0 
+7ffc0bad1000-7ffc0baf2000 rw-p 00000000 00:00 0                          [stack]
+7ffc0bbfb000-7ffc0bbfe000 r--p 00000000 00:00 0                          [vvar]
+7ffc0bbfe000-7ffc0bbff000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+====
+
 bytes from output557030438000
 
 00 01 00 02 
@@ -288,3 +365,5 @@ fe 7f 00 00
 c8 55 00 00 
 e8 f2 13 fc 
 b2 7f 00 00
+
+====
